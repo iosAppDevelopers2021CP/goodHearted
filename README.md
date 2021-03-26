@@ -11,7 +11,7 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+This app helps users to be aware of help needed nearby and from friends and family members.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]

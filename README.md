@@ -15,12 +15,12 @@ Original App Design Project - README Template
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Utilities
+- **Mobile:** Mobile App (iOS only) for now
+- **Story:** People in distress can seek immediate help by clicking the Emergency button and notify their friends and family. They can also have conversations through chat.
+- **Market:** It is for all the people who seek help when they feel endangered.
+- **Habit:** This app can be used whenever a person feels that they are in danger.
+- **Scope:** This app can send notifications to people nearby who are in the vicinity of the threat and also use GPS to notify the friends and family of the user's location.
 
 ## Product Spec
 

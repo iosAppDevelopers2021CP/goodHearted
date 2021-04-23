@@ -8,19 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		312F51EF2395BB5CE13FB16A /* Pods_GoodHearted.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CEE32E32F457F96A5DF936 /* Pods_GoodHearted.framework */; };
+
+		351E23A526324387006252DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351E23A426324387006252DF /* MapKit.framework */; };
+		351E23A8263248D2006252DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E23A7263248D2006252DF /* HomeViewController.swift */; };
+		351E23AB26324994006252DF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E23AA26324994006252DF /* ProfileViewController.swift */; };
+
 		476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E2CF126322EB700D085A5 /* signUpViewController.swift */; };
+
 		F627DDD3262EA3690055B23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDD2262EA3690055B23D /* AppDelegate.swift */; };
 		F627DDD5262EA3690055B23D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDD4262EA3690055B23D /* SceneDelegate.swift */; };
 		F627DDD7262EA3690055B23D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDD6262EA3690055B23D /* ViewController.swift */; };
 		F627DDDA262EA3690055B23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F627DDD8262EA3690055B23D /* Main.storyboard */; };
 		F627DDDC262EA36C0055B23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F627DDDB262EA36C0055B23D /* Assets.xcassets */; };
 		F627DDDF262EA36C0055B23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F627DDDD262EA36C0055B23D /* LaunchScreen.storyboard */; };
-		F627DDF0262F51440055B23D /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = F627DDEF262F51440055B23D /* heart.png */; };
 		F627DDF3262F56050055B23D /* AddEmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDF2262F56050055B23D /* AddEmergencyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
+		351E23A426324387006252DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		351E23A7263248D2006252DF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		351E23AA26324994006252DF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+
 		476E2CF126322EB700D085A5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+
 		57C51A35661D00FC4A878561 /* Pods-GoodHearted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHearted.release.xcconfig"; path = "Target Support Files/Pods-GoodHearted/Pods-GoodHearted.release.xcconfig"; sourceTree = "<group>"; };
 		92CEE32E32F457F96A5DF936 /* Pods_GoodHearted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHearted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5BA09384EAB4B807721AA56 /* Pods-GoodHearted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHearted.debug.xcconfig"; path = "Target Support Files/Pods-GoodHearted/Pods-GoodHearted.debug.xcconfig"; sourceTree = "<group>"; };
@@ -32,7 +43,6 @@
 		F627DDDB262EA36C0055B23D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F627DDDE262EA36C0055B23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F627DDE0262EA36C0055B23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F627DDEF262F51440055B23D /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = Pictures/heart.png; sourceTree = SOURCE_ROOT; };
 		F627DDF2262F56050055B23D /* AddEmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmergencyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				351E23A526324387006252DF /* MapKit.framework in Frameworks */,
 				312F51EF2395BB5CE13FB16A /* Pods_GoodHearted.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +71,7 @@
 		E85E126D9020F82B872569FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				351E23A426324387006252DF /* MapKit.framework */,
 				92CEE32E32F457F96A5DF936 /* Pods_GoodHearted.framework */,
 			);
 			name = Frameworks;
@@ -86,7 +98,6 @@
 		F627DDD1262EA3690055B23D /* GoodHearted */ = {
 			isa = PBXGroup;
 			children = (
-				F627DDEF262F51440055B23D /* heart.png */,
 				F627DDD2262EA3690055B23D /* AppDelegate.swift */,
 				F627DDD4262EA3690055B23D /* SceneDelegate.swift */,
 				F627DDD6262EA3690055B23D /* ViewController.swift */,
@@ -95,7 +106,12 @@
 				F627DDDD262EA36C0055B23D /* LaunchScreen.storyboard */,
 				F627DDE0262EA36C0055B23D /* Info.plist */,
 				F627DDF2262F56050055B23D /* AddEmergencyViewController.swift */,
+
+				351E23A7263248D2006252DF /* HomeViewController.swift */,
+				351E23AA26324994006252DF /* ProfileViewController.swift */,
+
 				476E2CF126322EB700D085A5 /* signUpViewController.swift */,
+
 			);
 			path = GoodHearted;
 			sourceTree = "<group>";
@@ -159,7 +175,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F627DDF0262F51440055B23D /* heart.png in Resources */,
 				F627DDDF262EA36C0055B23D /* LaunchScreen.storyboard in Resources */,
 				F627DDDC262EA36C0055B23D /* Assets.xcassets in Resources */,
 				F627DDDA262EA3690055B23D /* Main.storyboard in Resources */,
@@ -215,7 +230,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				351E23AB26324994006252DF /* ProfileViewController.swift in Sources */,
+				351E23A8263248D2006252DF /* HomeViewController.swift in Sources */,
+
 				476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */,
+
 				F627DDF3262F56050055B23D /* AddEmergencyViewController.swift in Sources */,
 				F627DDD7262EA3690055B23D /* ViewController.swift in Sources */,
 				F627DDD3262EA3690055B23D /* AppDelegate.swift in Sources */,

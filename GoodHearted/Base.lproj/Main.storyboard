@@ -334,14 +334,174 @@
                         <outlet property="ecEmailField" destination="kUg-LA-XMi" id="jP9-ci-VsT"/>
                         <outlet property="ecFullNameField" destination="lco-Pg-ypV" id="elc-cb-ee2"/>
                         <outlet property="ecPhoneField" destination="aWr-rJ-Jrw" id="Rcq-JN-UXg"/>
+                        <segue destination="rcL-ZY-rpF" kind="presentation" identifier="addContactSegue" id="0JE-39-Y9Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1066.1538461538462" y="61.137440758293835"/>
+          <point key="canvasLocation" x="1066.1538461538462" y="61.137440758293835"/>
+        </scene>
+
+        <!--Profile-->
+        <scene sceneID="2SC-R5-bJ2">
+            <objects>
+                <viewController title="Profile" id="AMr-H0-drh" customClass="ProfileViewController" customModule="GoodHearted" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="amg-CQ-qxH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfilePic" translatesAutoresizingMaskIntoConstraints="NO" id="GQM-UZ-S83">
+                                <rect key="frame" x="145" y="123" width="124" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grand Papa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDo-aB-v2k">
+                                <rect key="frame" x="100" y="259" width="215" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                <color key="textColor" red="0.1960252821" green="0.29807770249999999" blue="0.72932004930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="grandpa@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8r-vu-Gd0">
+                                <rect key="frame" x="193" y="337" width="181" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="123-456-7890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sk7-cB-IHj">
+                                <rect key="frame" x="193" y="379" width="133" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HeartS" translatesAutoresizingMaskIntoConstraints="NO" id="qZE-2S-lZX">
+                                <rect key="frame" x="31" y="332" width="81" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EmailS" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-ar-u3R">
+                                <rect key="frame" x="133" y="332" width="52" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PhoneNumerS" translatesAutoresizingMaskIntoConstraints="NO" id="Mvh-X7-JJ3">
+                                <rect key="frame" x="133" y="374" width="52" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EmergencyContact" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-FA-rhr">
+                                <rect key="frame" x="31" y="437" width="43" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergency Contacts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBS-hi-eYt">
+                                <rect key="frame" x="89" y="445" width="197" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="0.85099571939999996" green="0.27452802659999997" blue="0.3137080371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UgV-UI-hRa"/>
+                        <color key="backgroundColor" red="0.73715537789999996" green="0.85495072599999999" blue="0.87832415100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ProfileSymbol" selectedImage="ProfileSymbol" id="2op-dZ-uWM"/>
+                    <connections>
+                        <outlet property="profileImage" destination="GQM-UZ-S83" id="dvd-Lq-zGc"/>
+                        <outlet property="userEmail" destination="V8r-vu-Gd0" id="bl8-tj-lac"/>
+                        <outlet property="userName" destination="nDo-aB-v2k" id="xNh-SB-PtP"/>
+                        <outlet property="userPhone" destination="sk7-cB-IHj" id="zR3-Pq-o7J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ixu-0i-Sj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="413.83928571428572"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="3tC-oe-y2X">
+            <objects>
+                <viewController title="Home" id="ahC-zh-xFH" customClass="HomeViewController" customModule="GoodHearted" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MvK-Fh-TJi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PD-lj-MIG">
+                                <rect key="frame" x="40" y="131" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="EmergencyButton"/>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wKZ-db-Ys5">
+                                <rect key="frame" x="0.0" y="284" width="414" height="529"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-pw-5sy">
+                                <rect key="frame" x="253" y="131" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="NotificationButton"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sim-Ds-uRt"/>
+                        <color key="backgroundColor" red="0.73715537789999996" green="0.85495072599999999" blue="0.87832415100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="HomeSymbol" selectedImage="HomeSymbol" id="SAq-e9-9SW"/>
+                    <connections>
+                        <outlet property="emergencyButton" destination="1PD-lj-MIG" id="JnR-b9-237"/>
+                        <outlet property="mapView" destination="wKZ-db-Ys5" id="d1y-2n-uAV"/>
+                        <outlet property="notifyButton" destination="3d5-pw-5sy" id="wX9-Ng-QLl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MsM-og-kNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2053.6231884057975" y="-341.51785714285711"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h3S-rx-906">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="rcL-ZY-rpF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ahx-mn-v4I">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gWg-eB-2lB" kind="relationship" relationship="rootViewController" id="9tk-UF-hTs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Agn-BH-cEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="123" y="-28"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ty0-3V-WV4">
+            <objects>
+                <tabBarController id="gWg-eB-2lB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tqM-Na-F6v">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="NotificationSymbol" id="pfy-Uy-w8R"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="SettingSymbol" id="Bm6-gb-tfY"/>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Cp-1s-hMV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="ahC-zh-xFH" kind="relationship" relationship="viewControllers" id="pTO-wy-vp3"/>
+                        <segue destination="AMr-H0-drh" kind="relationship" relationship="viewControllers" id="M8h-rV-a9I"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZI3-VH-u19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="977" y="-28"/>
         </scene>
     </scenes>
     <resources>
+        <image name="EmailS" width="25" height="25"/>
+        <image name="EmergencyButton" width="120" height="120"/>
+        <image name="EmergencyContact" width="32" height="32"/>
+        <image name="HeartS" width="87" height="79"/>
+        <image name="HomeSymbol" width="25" height="27"/>
+        <image name="NotificationButton" width="120" height="120"/>
+        <image name="NotificationSymbol" width="23" height="26"/>
+        <image name="PhoneNumerS" width="25" height="25"/>
+        <image name="ProfilePic" width="145" height="145"/>
+        <image name="ProfileSymbol" width="25" height="25"/>
+        <image name="SettingSymbol" width="28" height="29"/>
         <image name="heart.png" width="120" height="120"/>
     </resources>
 </document>

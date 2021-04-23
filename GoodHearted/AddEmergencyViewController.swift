@@ -31,13 +31,15 @@ class AddEmergencyViewController: UIViewController {
             user.email = ecEmailField.text
             user["phone"] = ecPhoneField.text
             try user.save()
+            self.performSegue(withIdentifier: "addContactSegue", sender: nil)
         } catch {
             print(error)
         }
     }
     @IBAction func laterButton(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil);
-        let vc = storyboard.instantiateViewController(withIdentifier: "HomeScreen");
-        self.present(vc, animated: true, completion: nil);
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+//        let vc = storyboard.instantiateViewController(withIdentifier: "HomeScreen");
+//        self.present(vc, animated: true, completion: nil);
+        self.performSegue(withIdentifier: "addContactSegue", sender: nil)
     }
 }

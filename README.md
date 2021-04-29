@@ -27,11 +27,11 @@ GoodHearted is an app that users can press one button for emergency call when he
 
 **Required Must-have Stories**
 
-- [ ] User Registration
-- [ ] User Login & Stay Login
+- [x] User Registration
+- [x] User Login & Stay Login
 - [ ] User Logout 
-- [ ] Add Emergency contacts
-- [ ] Edit User Profile
+- [x] Add Emergency contacts
+- [x] Edit User Profile
 - [ ] Edit Emergency contacts
 - [ ] Edit Settings
 - [ ] Notifications
@@ -141,4 +141,6 @@ GoodHearted is an app that users can press one button for emergency call when he
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img width="376" alt="Screen Shot 2021-04-11 at 7 07 33 PM" src="https://user-images.githubusercontent.com/67810546/114331686-6a8b9980-9af9-11eb-9efd-91aa07e09194.png">
 
+### Sprint 1 Progress
 
+![gif-video](https://user-images.githubusercontent.com/6368257/115833629-e78c0c80-a431-11eb-887c-4d9c8c81eda3.gif)

@@ -21,7 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     $0.clientKey = "owXan0kQtFF6AA78W8NKvlQXPjXOR2OfQficwcXd"
                     $0.server = "https://parseapi.back4app.com"
             }
-            Parse.initialize(with: parseConfig)
+        PFUser.logOut()
+        Parse.initialize(with: parseConfig)
         return true
     }
 

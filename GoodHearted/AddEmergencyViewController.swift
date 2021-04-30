@@ -22,24 +22,32 @@ class AddEmergencyViewController: UIViewController {
     @IBAction func callSwitch(_ sender: Any) {
     }
     @IBAction func addButton(_ sender: Any) {
-        guard let user = PFUser.current() else {
-            print("Fail to get user")
-            return
-        }
+        var arrayName = [String]()
+        var arrayPhone = [String]()
+        
         do {
-            user["fullName"] = ecFullNameField.text
-            user.email = ecEmailField.text
-            user["phone"] = ecPhoneField.text
-            try user.save()
+            arrayName.append(ecFullNameField.text ?? "String")
+            arrayPhone.append(ecPhoneField.text ?? "String")
+            
+            let currentUser = PFUser.current()
+            print(currentUser?.username ?? "String")
+            
+            currentUser?.setValue(arrayName, forKey: "contactName")
+            currentUser?.setValue(arrayPhone, forKey: "contactPhone")
+            
+            currentUser?.saveInBackground {
+                (success: Bool, error: Error?) in
+                if (success) {
+                    print("object has been saved!")
+                } else {
+                    print("error!")
+                }
+            }
+            
             self.performSegue(withIdentifier: "addContactSegue", sender: nil)
-        } catch {
-            print(error)
         }
     }
     @IBAction func laterButton(_ sender: Any) {
-//        let storyboard = UIStoryboard(name: "Main", bundle: nil);
-//        let vc = storyboard.instantiateViewController(withIdentifier: "HomeScreen");
-//        self.present(vc, animated: true, completion: nil);
         self.performSegue(withIdentifier: "addContactSegue", sender: nil)
     }
 }

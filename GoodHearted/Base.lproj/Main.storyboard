@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5g-q6-8gP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rcL-ZY-rpF">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +30,7 @@
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="tDZ-rz-i42">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="tDZ-rz-i42">
                                 <rect key="frame" x="239" y="218" width="45" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -522,7 +523,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ixu-0i-Sj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3954" y="564"/>
+            <point key="canvasLocation" x="3625" y="495"/>
         </scene>
         <!--Home-->
         <scene sceneID="3tC-oe-y2X">
@@ -559,7 +560,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsM-og-kNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3953.8461538461538" y="-199.05213270142178"/>
+            <point key="canvasLocation" x="3625" y="-316"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CVM-Gc-G19">
+            <objects>
+                <viewController id="d6N-8b-5dt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jgf-t0-Lr5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is settings page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiQ-pA-y89">
+                                <rect key="frame" x="117" y="365" width="157" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="z0x-3K-id0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jw1-hU-Rci"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krU-SB-HVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4474" y="60"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h3S-rx-906">
@@ -583,7 +609,11 @@
                 <tabBarController id="gWg-eB-2lB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tqM-Na-F6v">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="NotificationSymbol" id="pfy-Uy-w8R"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="SettingSymbol" id="Bm6-gb-tfY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="SettingSymbol" id="Bm6-gb-tfY">
+                            <connections>
+                                <segue destination="d6N-8b-5dt" kind="show" id="lFg-LI-cBe"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Cp-1s-hMV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -600,6 +630,9 @@
             <point key="canvasLocation" x="2770.7692307692305" y="59.715639810426538"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Mnx-8x-brG"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="EmailS" width="25" height="25"/>
         <image name="EmergencyButton" width="120" height="120"/>
@@ -613,6 +646,8 @@
         <image name="ProfileSymbol" width="25" height="25"/>
         <image name="SettingSymbol" width="28" height="29"/>
         <image name="heart" width="120" height="120"/>
-        <image name="heart.png" width="120" height="120"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

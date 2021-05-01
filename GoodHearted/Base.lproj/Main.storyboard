@@ -562,7 +562,7 @@
             </objects>
             <point key="canvasLocation" x="3625" y="-316"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings-->
         <scene sceneID="CVM-Gc-G19">
             <objects>
                 <viewController id="d6N-8b-5dt" sceneMemberID="viewController">
@@ -570,22 +570,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is settings page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiQ-pA-y89">
-                                <rect key="frame" x="117" y="365" width="157" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-rx-c5V">
+                                <rect key="frame" x="0.0" y="148" width="390" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pkQ-3m-RAg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="    Emergency Contacts                                                  ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2Y-4N-9JO">
+                                <rect key="frame" x="0.0" y="88" width="390" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ckh-ZM-4q1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="    Edit Profile                                                   ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pth-U7-Q4R">
+                                <rect key="frame" x="0.0" y="216" width="390" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8Ep-h0-sBL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="    Privacy                                                   ">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z0x-3K-id0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pth-U7-Q4R" firstAttribute="top" secondItem="9EN-rx-c5V" secondAttribute="bottom" constant="8" symbolic="YES" id="IgL-HP-dYX"/>
+                            <constraint firstItem="Pth-U7-Q4R" firstAttribute="leading" secondItem="z0x-3K-id0" secondAttribute="leading" id="LgX-Be-6t4"/>
+                            <constraint firstItem="Pth-U7-Q4R" firstAttribute="trailing" secondItem="z0x-3K-id0" secondAttribute="trailing" id="QWm-E3-W0Q"/>
+                            <constraint firstItem="I2Y-4N-9JO" firstAttribute="trailing" secondItem="z0x-3K-id0" secondAttribute="trailing" id="T5g-1y-Yfc"/>
+                            <constraint firstItem="9EN-rx-c5V" firstAttribute="top" secondItem="I2Y-4N-9JO" secondAttribute="bottom" id="bdC-Zg-w8i"/>
+                            <constraint firstItem="I2Y-4N-9JO" firstAttribute="top" secondItem="z0x-3K-id0" secondAttribute="top" id="i6g-BP-0Ce"/>
+                            <constraint firstItem="Pth-U7-Q4R" firstAttribute="trailing" secondItem="9EN-rx-c5V" secondAttribute="trailing" id="mWV-87-DuN"/>
+                            <constraint firstItem="Pth-U7-Q4R" firstAttribute="top" secondItem="9EN-rx-c5V" secondAttribute="bottom" id="mcH-zO-Rct"/>
+                            <constraint firstItem="I2Y-4N-9JO" firstAttribute="leading" secondItem="z0x-3K-id0" secondAttribute="leading" id="qRF-cz-ugS"/>
+                            <constraint firstItem="9EN-rx-c5V" firstAttribute="leading" secondItem="z0x-3K-id0" secondAttribute="leading" id="rZH-0i-6jH"/>
+                            <constraint firstItem="Pth-U7-Q4R" firstAttribute="leading" secondItem="9EN-rx-c5V" secondAttribute="leading" id="ti2-SY-8Dq"/>
+                            <constraint firstItem="9EN-rx-c5V" firstAttribute="top" secondItem="I2Y-4N-9JO" secondAttribute="bottom" id="uNQ-1Y-IkC"/>
+                            <constraint firstItem="9EN-rx-c5V" firstAttribute="trailing" secondItem="z0x-3K-id0" secondAttribute="trailing" id="uzd-2l-2vs"/>
+                            <constraint firstItem="z0x-3K-id0" firstAttribute="bottom" secondItem="Pth-U7-Q4R" secondAttribute="bottom" constant="534" id="zY1-Yw-zwq"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="jw1-hU-Rci"/>
+                    <navigationItem key="navigationItem" title="Settings" id="jw1-hU-Rci"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krU-SB-HVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4474" y="60"/>
+            <point key="canvasLocation" x="4473.8461538461534" y="59.715639810426538"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h3S-rx-906">
@@ -646,6 +709,9 @@
         <image name="ProfileSymbol" width="25" height="25"/>
         <image name="SettingSymbol" width="28" height="29"/>
         <image name="heart" width="120" height="120"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

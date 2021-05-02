@@ -64,10 +64,11 @@ class EditEmergencyTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
-            
             arrayName.remove(at: indexPath.row)
-            
             arrayPhone.remove(at: indexPath.row)
+            user?.setValue(arrayName, forKey: "contactName")
+            user?.setValue(arrayPhone, forKey: "contactPhone")
+            user?.saveInBackground()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             self.emergencyList.reloadData()

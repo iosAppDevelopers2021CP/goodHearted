@@ -435,9 +435,6 @@
                                 <rect key="frame" x="253" y="131" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="NotificationButton"/>
-                                <connections>
-                                    <segue destination="gFh-1b-sJN" kind="show" id="2LS-gh-fbu"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sim-Ds-uRt"/>

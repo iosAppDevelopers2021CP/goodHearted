@@ -12,7 +12,7 @@ import AlamofireImage
 class EditEmergencyContactCell: UITableViewCell {
     
     var user = PFUser.current()
-    let emergencyContact = PFObject(className: "User")
+
     
     @IBOutlet weak var contactNameField: UITextField!
     @IBOutlet weak var contactPhoneField: UITextField!

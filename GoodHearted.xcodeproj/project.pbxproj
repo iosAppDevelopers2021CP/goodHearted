@@ -13,6 +13,8 @@
 		351E23A8263248D2006252DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E23A7263248D2006252DF /* HomeViewController.swift */; };
 		351E23AB26324994006252DF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E23AA26324994006252DF /* ProfileViewController.swift */; };
 		471B89CF263BD397007F8D56 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471B89CE263BD397007F8D56 /* SettingsViewController.swift */; };
+		359C84472639005900646519 /* EmergencyContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C84462639005900646519 /* EmergencyContactCell.swift */; };
+		359C844A26391DE400646519 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C844926391DE400646519 /* EditProfileViewController.swift */; };
 		476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E2CF126322EB700D085A5 /* signUpViewController.swift */; };
 		F627DDD3262EA3690055B23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDD2262EA3690055B23D /* AppDelegate.swift */; };
 		F627DDD5262EA3690055B23D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDD4262EA3690055B23D /* SceneDelegate.swift */; };
@@ -34,6 +36,11 @@
 		351E23AA26324994006252DF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		471B89CE263BD397007F8D56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 
+		351E23A426324387006252DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		351E23A7263248D2006252DF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		351E23AA26324994006252DF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		359C84462639005900646519 /* EmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactCell.swift; sourceTree = "<group>"; };
+		359C844926391DE400646519 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		476E2CF126322EB700D085A5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		57C51A35661D00FC4A878561 /* Pods-GoodHearted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHearted.release.xcconfig"; path = "Target Support Files/Pods-GoodHearted/Pods-GoodHearted.release.xcconfig"; sourceTree = "<group>"; };
 		92CEE32E32F457F96A5DF936 /* Pods_GoodHearted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHearted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +130,8 @@
 				0F3F8F57263289DE00BE26C2 /* LoginViewController.swift */,
 				471B89CE263BD397007F8D56 /* SettingsViewController.swift */,
 
+				359C84462639005900646519 /* EmergencyContactCell.swift */,
+				359C844926391DE400646519 /* EditProfileViewController.swift */,
 			);
 			path = GoodHearted;
 			sourceTree = "<group>";
@@ -247,6 +256,10 @@
 
 				F627DE05263E63380055B23D /* AddSettingsViewController.swift in Sources */,
 
+				359C84472639005900646519 /* EmergencyContactCell.swift in Sources */,
+				351E23AB26324994006252DF /* ProfileViewController.swift in Sources */,
+				351E23A8263248D2006252DF /* HomeViewController.swift in Sources */,
+				476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */,
 				F627DDF3262F56050055B23D /* AddEmergencyViewController.swift in Sources */,
 				0F3F8F58263289DE00BE26C2 /* LoginViewController.swift in Sources */,
 				F627DDD7262EA3690055B23D /* ViewController.swift in Sources */,
@@ -255,6 +268,7 @@
 				F627DDD3262EA3690055B23D /* AppDelegate.swift in Sources */,
 				F627DDD5262EA3690055B23D /* SceneDelegate.swift in Sources */,
 				471B89CF263BD397007F8D56 /* SettingsViewController.swift in Sources */,
+				359C844A26391DE400646519 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

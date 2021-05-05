@@ -40,7 +40,8 @@ class signUpViewController: UIViewController {
         user.password = userPasswordField.text!
         user.email = userEmailField.text!
         // other fields can be set just like with PFObject
-//        user["phone"] = userPhoneNumberField.text
+        user["phone"] = userPhoneNumberField.text
+        user["fullName"] = userFullNameField.text!
         
         user.signUpInBackground{(success, error) in
             if success{

@@ -8,10 +8,11 @@
 import UIKit
 import Parse
 
-class AddEmergencyViewController: UIViewController {
+class AddSettingsController: UIViewController {
     @IBOutlet weak var ecFullNameField: UITextField!
     @IBOutlet weak var ecEmailField: UITextField!
     @IBOutlet weak var ecPhoneField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,18 +25,20 @@ class AddEmergencyViewController: UIViewController {
     @IBAction func addButton(_ sender: Any) {
         var arrayName = [String]()
         var arrayPhone = [String]()
+        let user = PFUser.current()
+        arrayName = user?["contactName"] as! [String]
+        arrayPhone = user?["contactPhone"] as! [String]
         
         do {
             arrayName.append(ecFullNameField.text ?? "String")
             arrayPhone.append(ecPhoneField.text ?? "String")
             
-            let currentUser = PFUser.current()
-            print(currentUser?.username ?? "String")
+            print(user?.username ?? "String")
             
-            currentUser?.setValue(arrayName, forKey: "contactName")
-            currentUser?.setValue(arrayPhone, forKey: "contactPhone")
+            user?.setValue(arrayName, forKey: "contactName")
+            user?.setValue(arrayPhone, forKey: "contactPhone")
             
-            currentUser?.saveInBackground {
+            user?.saveInBackground {
                 (success: Bool, error: Error?) in
                 if (success) {
                     print("object has been saved!")
@@ -43,11 +46,6 @@ class AddEmergencyViewController: UIViewController {
                     print("error!")
                 }
             }
-            
-            self.performSegue(withIdentifier: "addContactSegue", sender: nil)
         }
-    }
-    @IBAction func laterButton(_ sender: Any) {
-        self.performSegue(withIdentifier: "addContactSegue", sender: nil)
     }
 }

@@ -21,14 +21,19 @@
 		F627DDDC262EA36C0055B23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F627DDDB262EA36C0055B23D /* Assets.xcassets */; };
 		F627DDDF262EA36C0055B23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F627DDDD262EA36C0055B23D /* LaunchScreen.storyboard */; };
 		F627DDF3262F56050055B23D /* AddEmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDF2262F56050055B23D /* AddEmergencyViewController.swift */; };
+		F627DDFB26393C090055B23D /* EditEmergencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */; };
+		F627DDFE26393C910055B23D /* EditEmergencyContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */; };
+		F627DE05263E63380055B23D /* AddSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DE04263E63360055B23D /* AddSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+
 		0F3F8F57263289DE00BE26C2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		351E23A426324387006252DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		351E23A7263248D2006252DF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		351E23AA26324994006252DF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		471B89CE263BD397007F8D56 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+
 		476E2CF126322EB700D085A5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		57C51A35661D00FC4A878561 /* Pods-GoodHearted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHearted.release.xcconfig"; path = "Target Support Files/Pods-GoodHearted/Pods-GoodHearted.release.xcconfig"; sourceTree = "<group>"; };
 		92CEE32E32F457F96A5DF936 /* Pods_GoodHearted.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodHearted.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +47,9 @@
 		F627DDDE262EA36C0055B23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F627DDE0262EA36C0055B23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F627DDF2262F56050055B23D /* AddEmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmergencyViewController.swift; sourceTree = "<group>"; };
+		F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyTableViewController.swift; sourceTree = "<group>"; };
+		F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyContactCell.swift; sourceTree = "<group>"; };
+		F627DE04263E63360055B23D /* AddSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +115,14 @@
 				351E23A7263248D2006252DF /* HomeViewController.swift */,
 				351E23AA26324994006252DF /* ProfileViewController.swift */,
 				476E2CF126322EB700D085A5 /* signUpViewController.swift */,
+
+				F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */,
+				F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */,
+				F627DE04263E63360055B23D /* AddSettingsViewController.swift */,
+
 				0F3F8F57263289DE00BE26C2 /* LoginViewController.swift */,
 				471B89CE263BD397007F8D56 /* SettingsViewController.swift */,
+
 			);
 			path = GoodHearted;
 			sourceTree = "<group>";
@@ -230,9 +244,14 @@
 				351E23AB26324994006252DF /* ProfileViewController.swift in Sources */,
 				351E23A8263248D2006252DF /* HomeViewController.swift in Sources */,
 				476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */,
+
+				F627DE05263E63380055B23D /* AddSettingsViewController.swift in Sources */,
+
 				F627DDF3262F56050055B23D /* AddEmergencyViewController.swift in Sources */,
 				0F3F8F58263289DE00BE26C2 /* LoginViewController.swift in Sources */,
 				F627DDD7262EA3690055B23D /* ViewController.swift in Sources */,
+				F627DDFB26393C090055B23D /* EditEmergencyTableViewController.swift in Sources */,
+				F627DDFE26393C910055B23D /* EditEmergencyContactCell.swift in Sources */,
 				F627DDD3262EA3690055B23D /* AppDelegate.swift in Sources */,
 				F627DDD5262EA3690055B23D /* SceneDelegate.swift in Sources */,
 				471B89CF263BD397007F8D56 /* SettingsViewController.swift in Sources */,

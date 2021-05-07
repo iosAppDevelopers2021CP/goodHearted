@@ -32,14 +32,14 @@ GoodHearted is an app that users can press one button for emergency call when he
 - [ ] User Logout 
 - [x] Add Emergency contacts
 - [x] Edit User Profile
-- [ ] Edit Emergency contacts
-- [ ] Edit Settings
+- [x] Edit Emergency contacts
+- [x] Edit Settings
 - [ ] Notifications
 
 **Optional Nice-to-have Stories**
 
 - [ ] Ringtone/Alarm sounds
-- [ ] Upload Profile Picture
+- [x] Upload Profile Picture
 - [ ] Direct map to Google Map through API
 - [ ] Chat with the contacts in a messenger style
 - [ ] make posts like instagram

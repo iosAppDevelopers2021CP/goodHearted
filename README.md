@@ -29,7 +29,7 @@ GoodHearted is an app that users can press one button for emergency call when he
 
 - [x] User Registration
 - [x] User Login & Stay Login
-- [ ] User Logout 
+- [x] User Logout 
 - [x] Add Emergency contacts
 - [x] Edit User Profile
 - [x] Edit Emergency contacts

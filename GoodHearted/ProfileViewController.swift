@@ -33,7 +33,12 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        tableView.delegate = self
+        tableView.dataSource = self
         displayInfor()
+        self.contactNames =  user["contactName"] as! [String]
+        self.contactPhones = user["contactPhone"] as! [String]
+        self.tableView.reloadData()
     }
 
     func displayInfor() {

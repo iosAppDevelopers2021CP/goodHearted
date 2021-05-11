@@ -288,7 +288,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nd6-NF-5cJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1254" y="-772"/>
+            <point key="canvasLocation" x="-1255" y="-826"/>
         </scene>
         <!--Add Emergency View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -658,7 +658,7 @@
         <!--Home-->
         <scene sceneID="3tC-oe-y2X">
             <objects>
-                <viewController title="Home" id="ahC-zh-xFH" customClass="HomeViewController" customModule="GoodHearted" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Home" modalPresentationStyle="fullScreen" id="ahC-zh-xFH" customClass="HomeViewController" customModule="GoodHearted" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MvK-Fh-TJi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -895,7 +895,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="ty0-3V-WV4">
             <objects>
-                <tabBarController id="gWg-eB-2lB" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="gWg-eB-2lB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tqM-Na-F6v">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="NotificationSymbol" id="pfy-Uy-w8R"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="SettingSymbol" id="Bm6-gb-tfY">

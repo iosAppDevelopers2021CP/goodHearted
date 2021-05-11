@@ -31,7 +31,6 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         {
             picker.sourceType = .photoLibrary
         }
-        
         present(picker, animated: true, completion: nil)
     }
     
@@ -60,11 +59,8 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
             user?.saveInBackground {
               (success: Bool, error: Error?) in
               if (success) {
-                self.dismiss(animated: true, completion: nil)
                 print("object has been saved!")
-                let alertController = UIAlertController (title: "GoodHearted", message: "Your Profile Has Been Updated!", preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                self.present(alertController, animated: true, completion: nil)
+                self.showResponseAlert(title:"GoodHearted",message:"Your Profile Has Been Updated!")
               }
               else {
                 print("object has not been saved! Error!")
@@ -75,15 +71,23 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         else
         {
             print("Error Saving")
-            let alertController = UIAlertController (title: "GoodHearted", message: "Cannot Leave Any Field Blank!", preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            self.present(alertController, animated: true, completion: nil)
+            self.showResponseAlert(title:"GoodHearted",message:"Cannot Leave Any Field Blank!")
         }
     }
         
+    func showResponseAlert(title:String?,message:String?){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+                while let presentedViewController = topController.presentedViewController {
+                    topController = presentedViewController
+                }
+                topController.present(alert, animated: true, completion: nil)
+         }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         userName.text = user!["fullName"] as? String
         userEmail.text = user!.email
         userPhone.text = user!["phone"] as? String

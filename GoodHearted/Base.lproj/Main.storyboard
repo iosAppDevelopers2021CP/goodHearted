@@ -278,6 +278,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="7Q4-GN-UZu"/>
                     <connections>
+                        <outlet property="agreeTerms" destination="0y1-Ch-Qph" id="tyj-sX-V08"/>
                         <outlet property="userEmailField" destination="gBu-l7-uT5" id="T0o-Qq-buk"/>
                         <outlet property="userFullNameField" destination="bev-Me-gQk" id="wQD-AG-8YL"/>
                         <outlet property="userNameField" destination="DpW-cq-Tol" id="El6-0B-jzV"/>

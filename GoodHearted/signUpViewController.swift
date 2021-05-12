@@ -18,6 +18,8 @@ class signUpViewController: UIViewController {
     @IBOutlet weak var userNameField: UITextField!
     @IBOutlet weak var userPasswordField: UITextField!
     @IBOutlet weak var userPhoneNumberField: UITextField!
+    @IBOutlet weak var agreeTerms: UISwitch!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,10 @@ class signUpViewController: UIViewController {
         //self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
     }
 
     
@@ -48,22 +54,34 @@ class signUpViewController: UIViewController {
             self.present(optionMenu, animated: true, completion: nil)
         }
         
-        let user = PFUser()
-        user.username = userNameField.text!
-        user.password = userPasswordField.text!
-        user.email = userEmailField.text!
-        // other fields can be set just like with PFObject
-        user["phone"] = userPhoneNumberField.text
-        user["fullName"] = userFullNameField.text!
+        if (!agreeTerms.isOn) {
+            // Alert
+            let optionMenu = UIAlertController(title: nil, message: "Please agree to Terms and Conditions to successfully log in!", preferredStyle: .alert)
+            // Add actions to the menu
+            let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler:
+                    nil)
+                optionMenu.addAction(cancelAction)
+            // Display the menu
+            self.present(optionMenu, animated: true, completion: nil)
+        }
         
-        user.signUpInBackground{(success, error) in
-            if success{
-                self.performSegue(withIdentifier: "signUpSegue", sender: nil)
-            } else{
-                print("Error: signUpNotSuccessful")
-//                self.showResponseAlert(title:"GoodHearted", message:"\(error?.localizedDescription)")
-            }
+        else {
+            let user = PFUser()
+            user.username = userNameField.text!
+            user.password = userPasswordField.text!
+            user.email = userEmailField.text!
+            // other fields can be set just like with PFObject
+            user["phone"] = userPhoneNumberField.text
+            user["fullName"] = userFullNameField.text!
+        
+            user.signUpInBackground{(success, error) in
+                if success{
+                    self.performSegue(withIdentifier: "signUpSegue", sender: nil)
+                } else {
+                    print("Error: signUpNotSuccessful")
+                }
             
+            }
         }
         
     }

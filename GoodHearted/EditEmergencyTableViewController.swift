@@ -34,13 +34,21 @@ class EditEmergencyTableViewController: UITableViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        self.refreshControl = UIRefreshControl()
+            self.refreshControl!.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
+        
+        let userId = user!.objectId!
+        print("Here \(userId)")
+        self.arrayName = user?["contactName"] as! [String]
+        self.arrayPhone = user?["contactPhone"] as! [String]
+        self.emergencyList.reloadData()
+        self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    
     @objc func refresh(sender:AnyObject) {
        // Code to refresh table view
         self.refreshControl!.endRefreshing()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

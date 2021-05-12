@@ -48,10 +48,22 @@ class signUpViewController: UIViewController {
                 self.performSegue(withIdentifier: "signUpSegue", sender: nil)
             } else{
                 print("Error: signUpNotSuccessful")
+                self.showResponseAlert(title:"GoodHearted", message:"\(error?.localizedDescription)")
             }
             
         }
         
+    }
+    
+    func showResponseAlert(title:String?,message:String?){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+                while let presentedViewController = topController.presentedViewController {
+                    topController = presentedViewController
+                }
+                topController.present(alert, animated: true, completion: nil)
+         }
     }
     
     

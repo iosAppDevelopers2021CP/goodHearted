@@ -35,6 +35,19 @@ class signUpViewController: UIViewController {
     @IBAction func backFromSignUpButton(_ sender: Any) {
     }
     @IBAction func submitSignUpButton(_ sender: Any) {
+        if !userFullNameField.hasText || !userEmailField.hasText ||
+            !userNameField.hasText || !userPasswordField.hasText ||
+            !userPhoneNumberField.hasText {
+            // Alert
+            let optionMenu = UIAlertController(title: nil, message: "Fields cannot be left blank!", preferredStyle: .alert)
+            // Add actions to the menu
+            let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler:
+                    nil)
+                optionMenu.addAction(cancelAction)
+            // Display the menu
+            self.present(optionMenu, animated: true, completion: nil)
+        }
+        
         let user = PFUser()
         user.username = userNameField.text!
         user.password = userPasswordField.text!
@@ -48,7 +61,7 @@ class signUpViewController: UIViewController {
                 self.performSegue(withIdentifier: "signUpSegue", sender: nil)
             } else{
                 print("Error: signUpNotSuccessful")
-                self.showResponseAlert(title:"GoodHearted", message:"\(error?.localizedDescription)")
+//                self.showResponseAlert(title:"GoodHearted", message:"\(error?.localizedDescription)")
             }
             
         }

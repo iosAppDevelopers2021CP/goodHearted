@@ -42,10 +42,22 @@ class AddSettingsController: UIViewController {
                 (success: Bool, error: Error?) in
                 if (success) {
                     print("object has been saved!")
+                    self.showResponseAlert(title:"GoodHearted",message:"The Emergency Contact Has Been Added!")
                 } else {
                     print("error!")
                 }
             }
         }
+    }
+    
+    func showResponseAlert(title:String?,message:String?){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        if var topController = UIApplication.shared.keyWindow?.rootViewController {
+                while let presentedViewController = topController.presentedViewController {
+                    topController = presentedViewController
+                }
+                topController.present(alert, animated: true, completion: nil)
+         }
     }
 }

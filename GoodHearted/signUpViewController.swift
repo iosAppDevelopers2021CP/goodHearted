@@ -47,7 +47,7 @@ class signUpViewController: UIViewController {
             // Alert
             let optionMenu = UIAlertController(title: nil, message: "Fields cannot be left blank!", preferredStyle: .alert)
             // Add actions to the menu
-            let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler:
+            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler:
                     nil)
                 optionMenu.addAction(cancelAction)
             // Display the menu
@@ -56,9 +56,9 @@ class signUpViewController: UIViewController {
         
         if (!agreeTerms.isOn) {
             // Alert
-            let optionMenu = UIAlertController(title: nil, message: "Please agree to Terms and Conditions to successfully log in!", preferredStyle: .alert)
+            let optionMenu = UIAlertController(title: nil, message: "Please agree to Terms and Conditions to successfully sign up!", preferredStyle: .alert)
             // Add actions to the menu
-            let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler:
+            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler:
                     nil)
                 optionMenu.addAction(cancelAction)
             // Display the menu

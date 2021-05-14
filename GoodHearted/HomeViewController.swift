@@ -10,14 +10,32 @@ import CoreLocation
 import Parse
 class HomeViewController: UIViewController, CLLocationManagerDelegate {
 
-    
-    @IBOutlet weak var emergencyButton: UIButton!
-    @IBOutlet weak var notifyButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
-    
     let locationManager = CLLocationManager()
     let user = PFUser.current()
     var locations = [PFGeoPoint]()
+    
+    @IBAction func emergencyButton(_ sender: Any) {
+        // Alert
+        let optionMenu = UIAlertController(title: "Please Hang On", message: "Michael is coming to assist you.", preferredStyle: .alert)
+        // Add actions to the menu
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler:
+                nil)
+            optionMenu.addAction(cancelAction)
+        // Display the menu
+        self.present(optionMenu, animated: true, completion: nil)
+    }
+    
+    @IBAction func notifyButton(_ sender: Any) {
+        // Alert
+        let optionMenu = UIAlertController(title: "Notification Sent", message: "We have let nearby users know that you are feeling unsafe.", preferredStyle: .alert)
+        // Add actions to the menu
+        let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler:
+                nil)
+            optionMenu.addAction(cancelAction)
+        // Display the menu
+        self.present(optionMenu, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

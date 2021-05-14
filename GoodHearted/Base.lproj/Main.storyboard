@@ -645,6 +645,9 @@
                                 <rect key="frame" x="40" y="131" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="EmergencyButton"/>
+                                <connections>
+                                    <action selector="emergencyButton:" destination="ahC-zh-xFH" eventType="touchUpInside" id="8Xh-US-BSq"/>
+                                </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wKZ-db-Ys5">
                                 <rect key="frame" x="0.0" y="284" width="414" height="529"/>
@@ -654,6 +657,9 @@
                                 <rect key="frame" x="253" y="131" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="NotificationButton"/>
+                                <connections>
+                                    <action selector="notifyButton:" destination="ahC-zh-xFH" eventType="touchUpInside" id="WSb-u4-Ug3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sim-Ds-uRt"/>
@@ -661,9 +667,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="HomeSymbol" selectedImage="HomeSymbol" id="SAq-e9-9SW"/>
                     <connections>
-                        <outlet property="emergencyButton" destination="1PD-lj-MIG" id="JnR-b9-237"/>
                         <outlet property="mapView" destination="wKZ-db-Ys5" id="d1y-2n-uAV"/>
-                        <outlet property="notifyButton" destination="3d5-pw-5sy" id="wX9-Ng-QLl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MsM-og-kNO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -911,7 +915,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DaughterPic" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-1u-ia5">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="z8b-1u-ia5">
                                             <rect key="frame" x="20" y="11" width="80" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
@@ -932,6 +936,7 @@
                                 <connections>
                                     <outlet property="contactNameField" destination="sbS-9m-eK8" id="iu4-60-vzR"/>
                                     <outlet property="contactPhoneField" destination="S6u-kM-sbY" id="clB-yL-dgJ"/>
+                                    <outlet property="contactProfilePic" destination="z8b-1u-ia5" id="ryo-C7-lq6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1129,7 +1134,6 @@
         <segue reference="gSc-d1-5oi"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="DaughterPic" width="65" height="59"/>
         <image name="EmailS" width="25" height="25"/>
         <image name="EmergencyButton" width="120" height="120"/>
         <image name="EmergencyContact" width="32" height="32"/>

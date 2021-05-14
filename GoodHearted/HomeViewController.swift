@@ -81,33 +81,33 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         
-        let query = PFQuery(className: "User")
-        query.whereKey("location", nearGeoPoint: user?["location"] as! PFGeoPoint)
-        
-        
-        query.findObjectsInBackground(block: {
-            objects, error in
-            if let proximityArray = objects {
-                for near in proximityArray {
-                    let position = near["location"] as? PFGeoPoint
-
-                    let theirLat = position?.latitude       //this is an optional
-                    let theirLong = position?.longitude     //this is an optional
-                    let theirLocation = PFGeoPoint(latitude: theirLat!, longitude: theirLong!)
-
-                    self.locations.append(theirLocation)
-                    if self.locations.isEmpty {
-                        
-                    }
-                    else
-                    {
-                        for person in self.locations {
-                            self.displayPin(person)
-                        }
-                    }
-                }
-            };
-    })
+//        let query = PFQuery(className: "User")
+//        query.whereKey("location", nearGeoPoint: user?["location"] as! PFGeoPoint)
+//
+//
+//        query.findObjectsInBackground(block: {
+//            objects, error in
+//            if let proximityArray = objects {
+//                for near in proximityArray {
+//                    let position = near["location"] as? PFGeoPoint
+//
+//                    let theirLat = position?.latitude       //this is an optional
+//                    let theirLong = position?.longitude     //this is an optional
+//                    let theirLocation = PFGeoPoint(latitude: theirLat!, longitude: theirLong!)
+//
+//                    self.locations.append(theirLocation)
+//                    if self.locations.isEmpty {
+//
+//                    }
+//                    else
+//                    {
+//                        for person in self.locations {
+//                            self.displayPin(person)
+//                        }
+//                    }
+//                }
+//            };
+//    })
     
 //    func checkLocationAuthorization() {
 //        switch CLLocationManager.authorizationStatus()

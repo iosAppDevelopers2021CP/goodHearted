@@ -9,13 +9,15 @@ import UIKit
 import Parse
 import AlamofireImage
 
-class EditEmergencyContactCell: UITableViewCell {
+class EditEmergencyContactCell: UITableViewCell, UIImagePickerControllerDelegate,  UINavigationControllerDelegate {
     
     var user = PFUser.current()
 
     
     @IBOutlet weak var contactNameField: UITextField!
     @IBOutlet weak var contactPhoneField: UITextField!
+    @IBOutlet weak var contactProfilePic: UIImageView!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,7 +32,6 @@ class EditEmergencyContactCell: UITableViewCell {
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
     }
 

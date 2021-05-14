@@ -21,9 +21,9 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
-        locationManager.delegate = self
+//        locationManager.requestAlwaysAuthorization()
+//        locationManager.startUpdatingLocation()
+//        locationManager.delegate = self
         
     }
     
@@ -78,7 +78,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidAppear(animated)
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
+        locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
 //        let query = PFQuery(className: "User")

@@ -16,14 +16,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var mapView: MKMapView!
     
     let locationManager = CLLocationManager()
-    let user = PFUser.current()
+    var user = PFUser.current()
+   
     var locations = [PFGeoPoint]()
+    var listofUsers = [PFUser]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        locationManager.requestAlwaysAuthorization()
-//        locationManager.startUpdatingLocation()
-//        locationManager.delegate = self
         
     }
     
@@ -48,7 +47,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
     func render(_ location: CLLocation) {
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         
-        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
         
         let region = MKCoordinateRegion(center: coordinate, span: span)
         
@@ -60,17 +59,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         mapView.addAnnotation(pin)
     }
     
-    func displayPin (_ location: PFGeoPoint) {
+    func displayPin (_ location: PFGeoPoint, _ username: String) {
         let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
-        
-        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        
-        let region = MKCoordinateRegion(center: coordinate, span: span)
-        
-        mapView.setRegion(region, animated: true)
         
         let pin = MKPointAnnotation()
         pin.coordinate = coordinate
+        pin.title = username
+        print(username)
         mapView.addAnnotation(pin)
     }
     
@@ -81,49 +76,26 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-//        let query = PFQuery(className: "User")
-//        query.whereKey("location", nearGeoPoint: user?["location"] as! PFGeoPoint)
-//
-//
-//        query.findObjectsInBackground(block: {
-//            objects, error in
-//            if let proximityArray = objects {
-//                for near in proximityArray {
-//                    let position = near["location"] as? PFGeoPoint
-//
-//                    let theirLat = position?.latitude       //this is an optional
-//                    let theirLong = position?.longitude     //this is an optional
-//                    let theirLocation = PFGeoPoint(latitude: theirLat!, longitude: theirLong!)
-//
-//                    self.locations.append(theirLocation)
-//                    if self.locations.isEmpty {
-//
-//                    }
-//                    else
-//                    {
-//                        for person in self.locations {
-//                            self.displayPin(person)
-//                        }
-//                    }
-//                }
-//            };
-//    })
-    
-//    func checkLocationAuthorization() {
-//        switch CLLocationManager.authorizationStatus()
-//        {
-//            case .authorizedWhenInUse:
-//                mapView.showsUserLocation = true
-//            case .denied: // Show alert telling users how to turn on permissions
-//                break
-//            case .notDetermined:
-//                locationManager.requestWhenInUseAuthorization()
-//                mapView.showsUserLocation = true
-//            case .restricted: // Show an alert letting them know what’s up
-//                break
-//            case .authorizedAlways:
-//                break
-//        }
-//    }
+        //let userGeoPoint = (user?["location"]) as! PFGeoPoint
+        let query = PFUser.query()
+        //query?.whereKey("Location", nearGeoPoint:userGeoPoint)
+        query?.findObjectsInBackground(block: {
+            objects, error in
+            if let listofUsers = objects {
+                for object in listofUsers {
+                    if (object["username"] as! String != self.user?.username)
+                    {
+                        let location = object["Location"] as! PFGeoPoint
+                        print(location)
+                        print("Getting location!")
+                        self.displayPin(location, object["username"] as! String)
+                    }
+                    else
+                    {
+                        print("Error getting location!")
+                    }
+                }
+            };
+    })
     }
 }

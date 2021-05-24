@@ -15,25 +15,25 @@ class AddEmergencyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
-    
-    @IBAction func messageSwitch(_ sender: Any) {
-    }
-    @IBAction func callSwitch(_ sender: Any) {
-    }
+
     @IBAction func addButton(_ sender: Any) {
         var arrayName = [String]()
         var arrayPhone = [String]()
+        var arrayEmail = [String]()
         
         do {
             arrayName.append(ecFullNameField.text ?? "String")
             arrayPhone.append(ecPhoneField.text ?? "String")
+            arrayEmail.append(ecEmailField.text ?? "String")
             
             let currentUser = PFUser.current()
             print(currentUser?.username ?? "String")
             
             currentUser?.setValue(arrayName, forKey: "contactName")
             currentUser?.setValue(arrayPhone, forKey: "contactPhone")
+            currentUser?.setValue(arrayEmail, forKey: "contactEmail")
             
             currentUser?.saveInBackground {
                 (success: Bool, error: Error?) in

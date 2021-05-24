@@ -16,27 +16,28 @@ class AddSettingsController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
     }
-    
-    @IBAction func messageSwitch(_ sender: Any) {
-    }
-    @IBAction func callSwitch(_ sender: Any) {
-    }
+
     @IBAction func addButton(_ sender: Any) {
         var arrayName = [String]()
         var arrayPhone = [String]()
+        var arrayEmail = [String]()
         let user = PFUser.current()
         arrayName = user?["contactName"] as! [String]
         arrayPhone = user?["contactPhone"] as! [String]
+        arrayEmail = user?["contactEmail"] as! [String]
         
         do {
             arrayName.append(ecFullNameField.text ?? "String")
             arrayPhone.append(ecPhoneField.text ?? "String")
+            arrayEmail.append(ecEmailField.text ?? "String")
             
             print(user?.username ?? "String")
             
             user?.setValue(arrayName, forKey: "contactName")
             user?.setValue(arrayPhone, forKey: "contactPhone")
+            user?.setValue(arrayEmail, forKey: "contactEmail")
             
             user?.saveInBackground {
                 (success: Bool, error: Error?) in

@@ -14,8 +14,9 @@ class EditEmergencyContactCell: UITableViewCell, UIImagePickerControllerDelegate
     var user = PFUser.current()
 
     
-    @IBOutlet weak var contactNameField: UITextField!
-    @IBOutlet weak var contactPhoneField: UITextField!
+    
+    @IBOutlet weak var contactNameField: UILabel!
+    @IBOutlet weak var contactPhoneField: UILabel!
     @IBOutlet weak var contactProfilePic: UIImageView!
     
     
@@ -28,7 +29,6 @@ class EditEmergencyContactCell: UITableViewCell, UIImagePickerControllerDelegate
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
-        
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {

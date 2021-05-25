@@ -22,9 +22,8 @@ class SettingsViewController: UIViewController {
         
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
-        
         let delegate =  self.view.window?.windowScene?.delegate as! SceneDelegate
-        
+        UserDefaults.standard.set(false, forKey: "userLoggedIn")
         delegate.window?.rootViewController = loginViewController
     }
     

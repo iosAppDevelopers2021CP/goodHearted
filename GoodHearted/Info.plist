@@ -22,12 +22,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>For Your Benefits</string>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>For Profile Picture</string>
 	<key>NSCameraUsageDescription</key>
 	<string>For Profile Picture</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>For Your Benefits</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>For Profile Picture</string>
 	<key>UIApplicationSceneManifest</key>

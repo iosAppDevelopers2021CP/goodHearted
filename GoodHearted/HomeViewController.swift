@@ -51,31 +51,34 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         let message = "Alert !!"
         let id = "yGUxJITfP3"
 
-        var data = [ "title": "Some Title",
+        let data = [ "title": "Some Title",
             "alert": message]
 
-        var userQuery: PFQuery = PFUser.query()!
+        let userQuery: PFQuery = PFUser.query()!
         userQuery.whereKey("objectId", equalTo: id)
         guard let query = PFInstallation.query() as? PFQuery<PFInstallation> else { return }
         query.whereKey("currentUser", matchesQuery: userQuery)
 
-        var push: PFPush = PFPush()
+        let push: PFPush = PFPush()
         push.setQuery(query)
         push.setData(data)
         push.sendInBackground()
     }
     
     func sendEmergencyText() {
-        if (MFMessageComposeViewController.canSendText()) {
-            let controller = MFMessageComposeViewController()
-            controller.body = "Please help me! I am in an emergency! My location is "
-            controller.recipients = arrayPhone
-            controller.messageComposeDelegate = self
-            self.present(controller, animated: true, completion: nil)
-        } else {
-            print("Cannot send message")
+            if (MFMessageComposeViewController.canSendText()) {
+                let controller = MFMessageComposeViewController()
+                let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
+                let long = current.longitude.description
+                let lat = current.latitude.description
+                controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+                controller.recipients = arrayPhone
+                controller.messageComposeDelegate = self
+                self.present(controller, animated: true, completion: nil)
+            } else {
+                print("Cannot send message")
+            }
         }
-    }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
         controller.dismiss(animated: true, completion: nil)
@@ -160,14 +163,17 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     
     func sendUnsafeText() {
         if (MFMessageComposeViewController.canSendText()) {
-            let controller = MFMessageComposeViewController()
-            controller.body = "I am feeling unsafe. Please look out to me! My location is "
-            controller.recipients = arrayPhone
-            controller.messageComposeDelegate = self
-            self.present(controller, animated: true, completion: nil)
-        } else {
-            print("Cannot send message")
-        }
+                   let controller = MFMessageComposeViewController()
+                   let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
+                   let long = current.longitude.description
+                   let lat = current.latitude.description
+                   controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+                   controller.recipients = arrayPhone
+                   controller.messageComposeDelegate = self
+                   self.present(controller, animated: true, completion: nil)
+               } else {
+                   print("Cannot send message")
+               }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

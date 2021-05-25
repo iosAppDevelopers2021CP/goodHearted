@@ -18,23 +18,31 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func onSignOut(_ sender: Any) {
-        PFUser.logOut()
-        
-        let main = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
-        let delegate =  self.view.window?.windowScene?.delegate as! SceneDelegate
-        UserDefaults.standard.set(false, forKey: "userLoggedIn")
-        delegate.window?.rootViewController = loginViewController
-    }
-    
-    /*
-    // MARK: - Navigation
+        let alertController = UIAlertController(
+            title: "Are you sure you want to sign out?",
+            message: "",
+            preferredStyle: .alert
+        )
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        let cancelAction = UIAlertAction(
+            title: "Cancel",
+            style: .destructive) { (action) in
+            // return
+        }
 
+        let confirmAction = UIAlertAction(
+            title: "OK", style: .default) { (action) in
+            PFUser.logOut()
+            
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let loginViewController = main.instantiateViewController(identifier: "LoginViewController")
+            let delegate =  self.view.window?.windowScene?.delegate as! SceneDelegate
+            UserDefaults.standard.set(false, forKey: "userLoggedIn")
+            delegate.window?.rootViewController = loginViewController
+        }
+
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
 }

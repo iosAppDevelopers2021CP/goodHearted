@@ -12,10 +12,15 @@ import MessageUI
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessageComposeViewControllerDelegate {
     
+
+    @IBOutlet weak var emergencyButton: UIButton!
+    @IBOutlet weak var notifyButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
-    let locationManager = CLLocationManager()
-    let user = PFUser.current()
+    
+    private var locationManager = CLLocationManager()
+    var user = PFUser.current()
     var locations = [PFGeoPoint]()
+    var listofUsers = [PFUser]()
     var arrayPhone = [String]()
     var membersPhone = ""
     var controller = MFMessageComposeViewController()
@@ -26,19 +31,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     var counter:Int = 5
     var timer: Timer?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
-        
-        self.arrayPhone = user?["contactPhone"] as! [String]
-    }
+
     
     @IBAction func emergencyButton(_ sender: Any) {
         counter = 5
@@ -129,6 +122,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         sendUnsafeText()
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        locationManager = CLLocationManager()
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+
     @objc func updateCounterNotification() {
         if counter >= 0 {
             counter -= 1
@@ -197,7 +197,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     func render(_ location: CLLocation) {
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         
-        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
+        let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
         
         let region = MKCoordinateRegion(center: coordinate, span: span)
         
@@ -209,17 +209,49 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         mapView.addAnnotation(pin)
     }
     
-    func displayPin (_ location: PFGeoPoint) {
+    func displayPin (_ location: PFGeoPoint, _ username: String) {
         let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
-        
-        let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
-        
-        let region = MKCoordinateRegion(center: coordinate, span: span)
-        
-        mapView.setRegion(region, animated: true)
         
         let pin = MKPointAnnotation()
         pin.coordinate = coordinate
+        pin.title = username
+        print(username + "adds pin")
         mapView.addAnnotation(pin)
+    }
+      
+   
+
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.delegate = self
+      
+        self.arrayPhone = user?["contactPhone"] as! [String]
+        
+        //let userGeoPoint = (user?["location"]) as! PFGeoPoint
+        let query = PFUser.query()
+        //query?.whereKey("Location", nearGeoPoint:userGeoPoint)
+        query?.findObjectsInBackground(block: {
+            objects, error in
+            if let listofUsers = objects {
+                for object in listofUsers {
+                    if (object["username"] as? String != self.user?.username)
+                        {
+                            if (object["Location"] != nil)
+                            {
+                                let location = object["Location"] as! PFGeoPoint
+                                print(location)
+                                print("Getting location!")
+                                self.displayPin(location, object["username"] as! String)
+                            }
+                        }
+                        else
+                        {
+                            print("Error getting location!")
+                        }
+                    }
+            };
+    })
     }
 }

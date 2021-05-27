@@ -128,6 +128,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         locationManager = CLLocationManager()
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+    }
 
     @objc func updateCounterNotification() {
         if counter >= 0 {

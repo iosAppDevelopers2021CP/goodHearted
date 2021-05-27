@@ -17,7 +17,6 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     var user = PFUser.current()
     let friend = PFObject(className: "User")
     
-    
     @IBAction func editProfileImage(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.delegate = self
@@ -27,10 +26,8 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         {
             picker.sourceType = .camera
         }
-        else
-        {
-            picker.sourceType = .photoLibrary
-        }
+
+        picker.sourceType = .photoLibrary
         present(picker, animated: true, completion: nil)
     }
     
@@ -88,6 +85,7 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         userName.text = user!["fullName"] as? String
         userEmail.text = user!.email
         userPhone.text = user!["phone"] as? String
@@ -99,16 +97,4 @@ class EditProfileViewController: UIViewController, UIImagePickerControllerDelega
         userImage.contentMode = .scaleAspectFill
         // Do any additional setup after loading the view.
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

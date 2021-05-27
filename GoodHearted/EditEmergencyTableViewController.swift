@@ -18,6 +18,7 @@ class EditEmergencyTableViewController: UITableViewController {
     }
     var arrayName = [String]()
     var arrayPhone = [String]()
+    var arrayEmail = [String]()
     let user = PFUser.current()
     
     override func viewDidLoad() {
@@ -26,9 +27,9 @@ class EditEmergencyTableViewController: UITableViewController {
             self.refreshControl!.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
         
         let userId = user!.objectId!
-        print("Here \(userId)")
         self.arrayName = user?["contactName"] as! [String]
         self.arrayPhone = user?["contactPhone"] as! [String]
+        self.arrayEmail = user?["contactEmail"] as! [String]
         self.emergencyList.reloadData()
         self.navigationItem.rightBarButtonItem = self.editButtonItem
         
@@ -39,9 +40,9 @@ class EditEmergencyTableViewController: UITableViewController {
             self.refreshControl!.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
         
         let userId = user!.objectId!
-        print("Here \(userId)")
         self.arrayName = user?["contactName"] as! [String]
         self.arrayPhone = user?["contactPhone"] as! [String]
+        self.arrayEmail = user?["contactEmail"] as! [String]
         self.emergencyList.reloadData()
         self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -57,6 +58,7 @@ class EditEmergencyTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell  = emergencyList.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! EditEmergencyContactCell
+        
         cell.contactNameField.text = arrayName[indexPath.row]
         cell.contactPhoneField.text = arrayPhone[indexPath.row]
         return cell
@@ -74,12 +76,25 @@ class EditEmergencyTableViewController: UITableViewController {
             // Delete the row from the data source
             arrayName.remove(at: indexPath.row)
             arrayPhone.remove(at: indexPath.row)
+            arrayEmail.remove(at: indexPath.row)
+
             user?.setValue(arrayName, forKey: "contactName")
             user?.setValue(arrayPhone, forKey: "contactPhone")
+            user?.setValue(arrayEmail, forKey: "contactEmail")
             user?.saveInBackground()
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             self.emergencyList.reloadData()
         }
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(identifier: "editContactView") as? EditContactViewController
+        
+        self.navigationController?.pushViewController(vc!, animated: true)
+    
+        vc?.name = arrayName[indexPath.row]
+        vc?.phone = arrayPhone[indexPath.row]
+        vc?.email = arrayEmail[indexPath.row]
     }
 }

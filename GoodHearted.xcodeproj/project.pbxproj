@@ -27,6 +27,7 @@
 		F627DDFB26393C090055B23D /* EditEmergencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */; };
 		F627DDFE26393C910055B23D /* EditEmergencyContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */; };
 		F627DE05263E63380055B23D /* AddSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DE04263E63360055B23D /* AddSettingsViewController.swift */; };
+		F6BF08B22651DD52002491FD /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF08B12651DD51002491FD /* EditContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyTableViewController.swift; sourceTree = "<group>"; };
 		F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyContactCell.swift; sourceTree = "<group>"; };
 		F627DE04263E63360055B23D /* AddSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSettingsViewController.swift; sourceTree = "<group>"; };
+		F6BF08B12651DD51002491FD /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				359C844926391DE400646519 /* EditProfileViewController.swift */,
 				47D0A7902647B6590075AA27 /* SettingsViewController.swift */,
 				47D0A7992647CCEE0075AA27 /* PrivacyViewController.swift */,
+				F6BF08B12651DD51002491FD /* EditContactViewController.swift */,
 			);
 			path = GoodHearted;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */,
 				F627DDF3262F56050055B23D /* AddEmergencyViewController.swift in Sources */,
 				0F3F8F58263289DE00BE26C2 /* LoginViewController.swift in Sources */,
+				F6BF08B22651DD52002491FD /* EditContactViewController.swift in Sources */,
 				F627DDD7262EA3690055B23D /* ViewController.swift in Sources */,
 				F627DDFB26393C090055B23D /* EditEmergencyTableViewController.swift in Sources */,
 				47D0A7912647B6590075AA27 /* SettingsViewController.swift in Sources */,

@@ -24,8 +24,13 @@
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Please Allow GoodHearted to Share Your Location When You Are In Emergency</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Please Allow GoodHearted to Share Your Location When You Are In Emergency</string>
+	<string>For Your Benefits</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>For Profile Picture</string>
+	<key>NSCameraUsageDescription</key>
+	<string>For Profile Picture</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>For Profile Picture</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

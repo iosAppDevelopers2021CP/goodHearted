@@ -9,12 +9,9 @@ import UIKit
 import CoreLocation
 import Parse
 import MessageUI
+import AVFoundation
 
 class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessageComposeViewControllerDelegate {
-    
-
-    @IBOutlet weak var emergencyButton: UIButton!
-    @IBOutlet weak var notifyButton: UIButton!
     @IBOutlet weak var mapView: MKMapView!
     
     private var locationManager = CLLocationManager()
@@ -25,6 +22,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     var membersPhone = ""
     var controller = MFMessageComposeViewController()
     var userLocation = String()
+    var player: AVAudioPlayer?
     
     //count down
     var alertController: UIAlertController!
@@ -34,58 +32,29 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
 
     
     @IBAction func emergencyButton(_ sender: Any) {
+        playSound()
         counter = 5
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-        
         sendEmergencyText()
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
     }
-    
-    func testPush(){
-        let message = "Alert !!"
-        let id = "yGUxJITfP3"
 
-        let data = [ "title": "Some Title",
-            "alert": message]
-
-        let userQuery: PFQuery = PFUser.query()!
-        userQuery.whereKey("objectId", equalTo: id)
-        guard let query = PFInstallation.query() as? PFQuery<PFInstallation> else { return }
-        query.whereKey("currentUser", matchesQuery: userQuery)
-
-        let push: PFPush = PFPush()
-        push.setQuery(query)
-        push.setData(data)
-        push.sendInBackground()
-    }
-    
-    func sendEmergencyText() {
-            if (MFMessageComposeViewController.canSendText()) {
-                let controller = MFMessageComposeViewController()
-                let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
-                let long = current.longitude.description
-                let lat = current.latitude.description
-                controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
-                controller.recipients = arrayPhone
-                controller.messageComposeDelegate = self
-                self.present(controller, animated: true, completion: nil)
-            } else {
-                print("Cannot send message")
-            }
+    @objc func sendEmergencyText() {
+        if (MFMessageComposeViewController.canSendText()) {
+            let controller = MFMessageComposeViewController()
+            let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
+            let long = current.longitude.description
+            let lat = current.latitude.description
+            controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+            controller.recipients = arrayPhone
+            controller.messageComposeDelegate = self
+            self.present(controller, animated: true, completion: nil)
+        } else {
+            print("Cannot send message")
         }
+    }
     
     func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
-        controller.dismiss(animated: true, completion: nil)
-    }
-    
-    @objc func updateCounter() {
-        if counter >= 0 {
-            counter -= 1
-        }
-        if counter == 0 {
-            timer?.invalidate()
-            print("COUNTER GOT TO ZERO")
-            dismiss(animated: true, completion: nil)
-            
+        controller.dismiss(animated: true) {
             let alertController = UIAlertController(
                 title: "Call 911?",
                 message: "",
@@ -114,8 +83,63 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         }
     }
     
+    @objc func updateCounter() {
+        if counter >= 0 {
+            counter -= 1
+        }
+        if counter == 0 {
+            timer?.invalidate()
+            print("COUNTER GOT TO ZERO")
+            dismiss(animated: true, completion: nil)
+
+            let alertController = UIAlertController(
+                title: "Call 911?",
+                message: "",
+                preferredStyle: .alert
+            )
+
+            let cancelAction = UIAlertAction(
+                title: "Cancel",
+                style: .destructive) { (action) in
+                // return to homescreen
+            }
+
+            let confirmAction = UIAlertAction(
+                title: "OK", style: .default) { (action) in
+                let url = URL(string: "tel://\(911)")
+                if #available(iOS 10, *) {
+                    UIApplication.shared.open(url!, options: [:], completionHandler:nil)
+                } else {
+                    UIApplication.shared.openURL(url!)
+                }
+            }
+
+            alertController.addAction(confirmAction)
+            alertController.addAction(cancelAction)
+            self.present(alertController, animated: true, completion: nil)
+        }
+    }
+    
+    func playSound() {
+        guard let url = Bundle.main.url(forResource: "iphone_alarm", withExtension: "mp3")
+        else {
+            print("url not found")
+            return
+        }
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+            guard let player = player else { return }
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+
     @IBAction func notifyButton(_ sender: Any) {
-        //testPush()
         counter = 5
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounterNotification), userInfo: nil, repeats: true)
 
@@ -219,9 +243,6 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         print(username + "adds pin")
         mapView.addAnnotation(pin)
     }
-      
-   
-
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

@@ -27,6 +27,7 @@
 		F627DDFB26393C090055B23D /* EditEmergencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */; };
 		F627DDFE26393C910055B23D /* EditEmergencyContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */; };
 		F627DE05263E63380055B23D /* AddSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DE04263E63360055B23D /* AddSettingsViewController.swift */; };
+		F6340EB92660868400EEE0A5 /* iphone_alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6340EB82660868300EEE0A5 /* iphone_alarm.mp3 */; };
 		F6BF08B22651DD52002491FD /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF08B12651DD51002491FD /* EditContactViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyTableViewController.swift; sourceTree = "<group>"; };
 		F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyContactCell.swift; sourceTree = "<group>"; };
 		F627DE04263E63360055B23D /* AddSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSettingsViewController.swift; sourceTree = "<group>"; };
+		F6340EB82660868300EEE0A5 /* iphone_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = iphone_alarm.mp3; path = ../../../../Downloads/iphone_alarm.mp3; sourceTree = "<group>"; };
 		F6BF08B12651DD51002491FD /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 		F627DDD1262EA3690055B23D /* GoodHearted */ = {
 			isa = PBXGroup;
 			children = (
+				F6340EB82660868300EEE0A5 /* iphone_alarm.mp3 */,
 				F627DDD2262EA3690055B23D /* AppDelegate.swift */,
 				F627DDD4262EA3690055B23D /* SceneDelegate.swift */,
 				F627DDD6262EA3690055B23D /* ViewController.swift */,
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F627DDDF262EA36C0055B23D /* LaunchScreen.storyboard in Resources */,
+				F6340EB92660868400EEE0A5 /* iphone_alarm.mp3 in Resources */,
 				F627DDDC262EA36C0055B23D /* Assets.xcassets in Resources */,
 				F627DDDA262EA3690055B23D /* Main.storyboard in Resources */,
 			);
@@ -416,9 +420,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YB676C45S8;
+				DEVELOPMENT_TEAM = L4S7P4PNW6;
 				INFOPLIST_FILE = GoodHearted/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,9 +441,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YB676C45S8;
+				DEVELOPMENT_TEAM = L4S7P4PNW6;
 				INFOPLIST_FILE = GoodHearted/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

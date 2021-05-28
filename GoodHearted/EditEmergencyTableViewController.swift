@@ -25,8 +25,7 @@ class EditEmergencyTableViewController: UITableViewController {
         super.viewDidLoad()
         self.refreshControl = UIRefreshControl()
             self.refreshControl!.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
-        
-        let userId = user!.objectId!
+    
         self.arrayName = user?["contactName"] as! [String]
         self.arrayPhone = user?["contactPhone"] as! [String]
         self.arrayEmail = user?["contactEmail"] as! [String]
@@ -39,7 +38,6 @@ class EditEmergencyTableViewController: UITableViewController {
         self.refreshControl = UIRefreshControl()
             self.refreshControl!.addTarget(self, action: #selector(refresh(sender:)), for: UIControl.Event.valueChanged)
         
-        let userId = user!.objectId!
         self.arrayName = user?["contactName"] as! [String]
         self.arrayPhone = user?["contactPhone"] as! [String]
         self.arrayEmail = user?["contactEmail"] as! [String]

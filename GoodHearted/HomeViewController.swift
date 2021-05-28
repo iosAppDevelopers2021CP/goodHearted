@@ -22,7 +22,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     var membersPhone = ""
     var controller = MFMessageComposeViewController()
     var userLocation = String()
-    var player: AVAudioPlayer?
+    var player: AVAudioPlayer? 
     
     //count down
     var alertController: UIAlertController!

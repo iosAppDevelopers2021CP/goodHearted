@@ -32,10 +32,29 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
 
     
     @IBAction func emergencyButton(_ sender: Any) {
-        playSound()
-        counter = 5
-        sendEmergencyText()
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+        let alertController = UIAlertController(
+            title: "Calling for Help?",
+            message: "This will trigger an alarm sound and notify nearby users",
+            preferredStyle: .alert
+        )
+
+        let cancelAction = UIAlertAction(
+            title: "Cancel",
+            style: .destructive) { (action) in
+            // return to homescreen
+        }
+
+        let confirmAction = UIAlertAction(
+            title: "OK", style: .default) { (action) in
+            self.playSound()
+            self.counter = 5
+            self.sendEmergencyText()
+            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCounter), userInfo: nil, repeats: true)
+        }
+
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
     }
 
     @objc func sendEmergencyText() {
@@ -140,10 +159,28 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     }
 
     @IBAction func notifyButton(_ sender: Any) {
-        counter = 5
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounterNotification), userInfo: nil, repeats: true)
+        let alertController = UIAlertController(
+            title: "Calling for Help?",
+            message: "This will notify nearby users that you are feeling unsafe",
+            preferredStyle: .alert
+        )
 
-        sendUnsafeText()
+        let cancelAction = UIAlertAction(
+            title: "Cancel",
+            style: .destructive) { (action) in
+            // return to homescreen
+        }
+
+        let confirmAction = UIAlertAction(
+            title: "OK", style: .default) { (action) in
+            self.counter = 5
+            self.sendUnsafeText()
+            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCounterNotification), userInfo: nil, repeats: true)
+        }
+
+        alertController.addAction(confirmAction)
+        alertController.addAction(cancelAction)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

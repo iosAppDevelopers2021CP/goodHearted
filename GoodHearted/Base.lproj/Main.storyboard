@@ -370,8 +370,6 @@
                             <constraint firstItem="Bbx-Pz-av3" firstAttribute="top" secondItem="gBu-l7-uT5" secondAttribute="bottom" constant="20" id="RJ4-ea-vHr"/>
                             <constraint firstItem="bev-Me-gQk" firstAttribute="centerX" secondItem="UdS-vD-QNL" secondAttribute="centerX" constant="12.5" id="RPu-dF-u8E"/>
                             <constraint firstItem="L1t-WD-uXo" firstAttribute="centerX" secondItem="UdS-vD-QNL" secondAttribute="centerX" constant="8.5" id="TlC-c2-5dW"/>
-                            <constraint firstItem="Whe-Py-nYE" firstAttribute="centerX" secondItem="UdS-vD-QNL" secondAttribute="centerX" constant="-72.5" id="XJj-TP-Wng"/>
-                            <constraint firstItem="JvW-Qw-T8h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Whe-Py-nYE" secondAttribute="trailing" constant="74" id="ZZA-6a-HDd"/>
                             <constraint firstItem="Upq-0P-SgB" firstAttribute="leading" secondItem="NH0-jJ-rZ9" secondAttribute="leading" constant="26" id="ZlN-1y-3Z1"/>
                             <constraint firstItem="pmf-ee-I5p" firstAttribute="leading" secondItem="NH0-jJ-rZ9" secondAttribute="leading" constant="26" id="bb6-8D-vfN"/>
                             <constraint firstItem="JqD-e6-sjn" firstAttribute="top" secondItem="VtJ-Y1-v57" secondAttribute="bottom" constant="8" symbolic="YES" id="dNF-FJ-p5u"/>

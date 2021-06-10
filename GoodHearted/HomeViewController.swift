@@ -32,6 +32,24 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
 
     
     @IBAction func emergencyButton(_ sender: Any) {
+        let notification = PFObject(className: "Notification")
+        let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
+        let long = current.longitude.description
+        let lat = current.latitude.description
+        
+        notification["Message"] = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttps://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+        notification["Author"] = PFUser.current()!
+        notification.saveInBackground{(success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved")
+            }
+            else
+            {
+                print ("Error")
+            }
+        }
+        
         let alertController = UIAlertController(
             title: "Calling for Help?",
             message: "This will trigger an alarm sound and notify nearby users",
@@ -63,11 +81,27 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
             let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
             let long = current.longitude.description
             let lat = current.latitude.description
+            
             controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
             controller.recipients = arrayPhone
             controller.messageComposeDelegate = self
             self.present(controller, animated: true, completion: nil)
-        } else {
+            //let notification = PFObject(className: "Notification")
+            
+//            notification["Message"] = "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨\nPlease help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttps://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttps://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+//            notification["Author"] = PFUser.current()!
+//            notification.saveInBackground{(success, error) in
+//                if success {
+//                    self.dismiss(animated: true, completion: nil)
+//                    print("Saved")
+//                }
+//                else
+//                {
+//                    print ("Error")
+//                }
+//            }
+        }
+        else {
             print("Cannot send message")
         }
     }
@@ -229,10 +263,25 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
                    let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
                    let long = current.longitude.description
                    let lat = current.latitude.description
+                    let notification = PFObject(className: "Notification")
+            
+                    
                    controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
                    controller.recipients = arrayPhone
                    controller.messageComposeDelegate = self
                    self.present(controller, animated: true, completion: nil)
+                    notification["Message"] = "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨\nPlease help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttps://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttps://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+                    notification["Author"] = PFUser.current()!
+                    notification.saveInBackground{(success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+                print("Saved")
+            }
+            else
+            {
+                print ("Error")
+            }
+    }
                } else {
                    print("Cannot send message")
                }

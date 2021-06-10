@@ -63,11 +63,13 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
             let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
             let long = current.longitude.description
             let lat = current.latitude.description
+            
             controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
             controller.recipients = arrayPhone
             controller.messageComposeDelegate = self
             self.present(controller, animated: true, completion: nil)
-        } else {
+        }
+        else {
             print("Cannot send message")
         }
     }
@@ -172,15 +174,34 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         }
 
         let confirmAction = UIAlertAction(
-            title: "OK", style: .default) { (action) in
+            title: "OK", style: .default) { [self] (action) in
+            self.saveNotification()
             self.counter = 5
             self.sendUnsafeText()
-            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCounterNotification), userInfo: nil, repeats: true)
+//            self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCounterNotification), userInfo: nil, repeats: true)
         }
-
         alertController.addAction(confirmAction)
         alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    func saveNotification() {
+        let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
+        let long = current.longitude.description
+        let lat = current.latitude.description
+        let notification = PFObject(className: "Notification")
+        notification["Message"] = "🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨🚨\nPlease help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttps://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttps://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+        notification["Author"] = PFUser.current()!
+        notification.saveInBackground{(success, error) in
+            if success {
+                //self.dismiss(animated: true, completion: nil)
+                print("Saved")
+            }
+            else
+            {
+                print ("Error")
+            }
+        }
     }
     
     override func viewDidLoad() {
@@ -191,49 +212,52 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         locationManager.startUpdatingLocation()
     }
 
-    @objc func updateCounterNotification() {
-        if counter >= 0 {
-            counter -= 1
-        }
-        if counter == 0 {
-            timer?.invalidate()
-            print("COUNTER GOT TO ZERO")
-            dismiss(animated: true, completion: nil)
-            
-            let alertController = UIAlertController(
-                title: "Notification Sent",
-                message: "We have let nearby users know that you are feeling unsafe.",
-                preferredStyle: .alert
-            )
-
-            let cancelAction = UIAlertAction(
-                title: "Cancel",
-                style: .destructive) { (action) in
-                // return to homescreen
-            }
-
-            let confirmAction = UIAlertAction(
-                title: "OK", style: .default) { (action) in
-                // ...
-            }
-
-            alertController.addAction(confirmAction)
-            alertController.addAction(cancelAction)
-            self.present(alertController, animated: true, completion: nil)
-        }
-    }
+//    @objc func updateCounterNotification() {
+//        if counter >= 0 {
+//            counter -= 1
+//        }
+//        if counter == 0 {
+//            timer?.invalidate()
+//            print("COUNTER GOT TO ZERO")
+//            dismiss(animated: true, completion: nil)
+//
+//            let alertController = UIAlertController(
+//                title: "Notification Sent",
+//                message: "We have let nearby users know that you are feeling unsafe.",
+//                preferredStyle: .alert
+//            )
+//
+//            let cancelAction = UIAlertAction(
+//                title: "Cancel",
+//                style: .destructive) { (action) in
+//                // return to homescreen
+//            }
+//
+//            let confirmAction = UIAlertAction(
+//                title: "OK", style: .default) { (action) in
+//                // ...
+//            }
+//
+//            alertController.addAction(confirmAction)
+//            alertController.addAction(cancelAction)
+//            self.present(alertController, animated: true, completion: nil)
+//        }
+//    }
     
     func sendUnsafeText() {
         if (MFMessageComposeViewController.canSendText()) {
+            self.saveNotification()
                    let controller = MFMessageComposeViewController()
                    let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
                    let long = current.longitude.description
                    let lat = current.latitude.description
+                
                    controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
                    controller.recipients = arrayPhone
                    controller.messageComposeDelegate = self
                    self.present(controller, animated: true, completion: nil)
-               } else {
+    }
+                else {
                    print("Cannot send message")
                }
     }

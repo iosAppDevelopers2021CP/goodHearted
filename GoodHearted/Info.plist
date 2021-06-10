@@ -22,13 +22,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Please Allow GoodHearted to Share Your Location When You Are In Emergency</string>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>For Profile Picture</string>
 	<key>NSCameraUsageDescription</key>
 	<string>For Profile Picture</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Please Allow GoodHearted to Share Your Location When You Are In Emergency</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>For Your Benefits</string>
 	<key>NSPhotoLibraryUsageDescription</key>

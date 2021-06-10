@@ -24,9 +24,9 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         self.tableView.rowHeight = 260
         // Do any additional setup after loading the view.
         
-//        refreshControl = UIRefreshControl()
-//        refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
-//        tableView.insertSubview(refreshControl, at: 0)
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(onRefresh), for: .valueChanged)
+        tableView.insertSubview(refreshControl, at: 0)
         self.tableView.reloadData()
     }
     
@@ -62,7 +62,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let notification = Notification[indexPath.row]
+        let notification = Notification[(Notification.count-1) - indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell") as! NotificationCell
         let user = notification["Author"] as! PFUser
         cell.userName.text = user.username

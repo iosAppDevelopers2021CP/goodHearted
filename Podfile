@@ -8,6 +8,7 @@ target 'GoodHearted' do
   # Pods for GoodHearted
   pod 'Parse'
   pod 'AlamofireImage'
+  pod 'MessageKit'
 
 end
 

@@ -12,6 +12,8 @@
 		351E23A526324387006252DF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351E23A426324387006252DF /* MapKit.framework */; };
 		351E23A8263248D2006252DF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E23A7263248D2006252DF /* HomeViewController.swift */; };
 		351E23AB26324994006252DF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 351E23AA26324994006252DF /* ProfileViewController.swift */; };
+		3526865126715BAD00521704 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3526865026715BAD00521704 /* NotificationViewController.swift */; };
+		35268653267162C400521704 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35268652267162C400521704 /* NotificationCell.swift */; };
 		359C84472639005900646519 /* EmergencyContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C84462639005900646519 /* EmergencyContactCell.swift */; };
 		359C844A26391DE400646519 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C844926391DE400646519 /* EditProfileViewController.swift */; };
 		476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E2CF126322EB700D085A5 /* signUpViewController.swift */; };
@@ -37,6 +39,8 @@
 		351E23A426324387006252DF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		351E23A7263248D2006252DF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		351E23AA26324994006252DF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		3526865026715BAD00521704 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		35268652267162C400521704 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		359C84462639005900646519 /* EmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactCell.swift; sourceTree = "<group>"; };
 		359C844926391DE400646519 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		476E2CF126322EB700D085A5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,9 @@
 				47D0A7992647CCEE0075AA27 /* PrivacyViewController.swift */,
 				F6BF08B12651DD51002491FD /* EditContactViewController.swift */,
 				478391892670965600857BCC /* FirstAidViewController.swift */,
+
+				3526865026715BAD00521704 /* NotificationViewController.swift */,
+				35268652267162C400521704 /* NotificationCell.swift */,
 			);
 			path = GoodHearted;
 			sourceTree = "<group>";
@@ -267,8 +274,10 @@
 				351E23A8263248D2006252DF /* HomeViewController.swift in Sources */,
 				476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */,
 				F627DDF3262F56050055B23D /* AddEmergencyViewController.swift in Sources */,
+				3526865126715BAD00521704 /* NotificationViewController.swift in Sources */,
 				0F3F8F58263289DE00BE26C2 /* LoginViewController.swift in Sources */,
 				F6BF08B22651DD52002491FD /* EditContactViewController.swift in Sources */,
+				35268653267162C400521704 /* NotificationCell.swift in Sources */,
 				F627DDD7262EA3690055B23D /* ViewController.swift in Sources */,
 				F627DDFB26393C090055B23D /* EditEmergencyTableViewController.swift in Sources */,
 				47D0A7912647B6590075AA27 /* SettingsViewController.swift in Sources */,
@@ -424,14 +433,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L4S7P4PNW6;
+				DEVELOPMENT_TEAM = YB676C45S8;
 				INFOPLIST_FILE = GoodHearted/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = memo.com.GoodHearted;
+				PRODUCT_BUNDLE_IDENTIFIER = memo.com.GoodHearted.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -445,14 +454,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = L4S7P4PNW6;
+				DEVELOPMENT_TEAM = YB676C45S8;
 				INFOPLIST_FILE = GoodHearted/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = memo.com.GoodHearted;
+				PRODUCT_BUNDLE_IDENTIFIER = memo.com.GoodHearted.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

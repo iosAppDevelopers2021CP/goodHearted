@@ -1042,7 +1042,7 @@
             </objects>
             <point key="canvasLocation" x="2692" y="-1543"/>
         </scene>
-        <!--Archive-->
+        <!--Notification-->
         <scene sceneID="enP-xg-Xux">
             <objects>
                 <viewController id="8ty-F3-VTf" customClass="NotificationViewController" customModule="GoodHearted" customModuleProvider="target" sceneMemberID="viewController">
@@ -1116,7 +1116,7 @@
                         <viewLayoutGuide key="safeArea" id="Dyg-Kz-3Qi"/>
                         <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Archive" id="2aY-qR-VVQ"/>
+                    <navigationItem key="navigationItem" title="Notification" id="2aY-qR-VVQ"/>
                     <connections>
                         <outlet property="tableView" destination="JeN-LB-geU" id="OGC-HY-JKD"/>
                     </connections>
@@ -1493,7 +1493,7 @@
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" id="gWg-eB-2lB" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="tqM-Na-F6v">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="clock.arrow.circlepath" catalog="system" id="pfy-Uy-w8R">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="bell" catalog="system" id="pfy-Uy-w8R">
                             <connections>
                                 <segue destination="8ty-F3-VTf" kind="show" id="DOp-sQ-dS8"/>
                             </connections>
@@ -1702,8 +1702,8 @@
         <image name="HeartS" width="87" height="79"/>
         <image name="NotificationButton" width="120" height="120"/>
         <image name="PhoneNumerS" width="25" height="25"/>
+        <image name="bell" catalog="system" width="128" height="124"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart" width="120" height="120"/>
         <image name="homekit" catalog="system" width="128" height="106"/>

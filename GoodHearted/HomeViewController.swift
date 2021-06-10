@@ -47,6 +47,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         let confirmAction = UIAlertAction(
             title: "OK", style: .default) { (action) in
             self.playSound()
+            self.saveNotification()
             self.counter = 5
             self.sendEmergencyText()
             self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCounter), userInfo: nil, repeats: true)

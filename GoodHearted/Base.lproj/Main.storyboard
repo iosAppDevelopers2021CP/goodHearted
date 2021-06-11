@@ -1484,7 +1484,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-pw-5sy">
                                 <rect key="frame" x="263" y="69" width="111" height="111"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="My Post copy"/>
+                                <state key="normal" image="new"/>
                                 <connections>
                                     <action selector="notifyButton:" destination="ahC-zh-xFH" eventType="touchUpInside" id="WSb-u4-Ug3"/>
                                 </connections>
@@ -2255,7 +2255,6 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
     </inferredMetricsTieBreakers>
     <resources>
         <image name="HeartS" width="87" height="79"/>
-        <image name="My Post copy" width="2560" height="2560"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="emergency button" width="1226" height="1226"/>
@@ -2263,6 +2262,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart" width="120" height="120"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="new" width="2056" height="2056"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="phone" catalog="system" width="128" height="115"/>

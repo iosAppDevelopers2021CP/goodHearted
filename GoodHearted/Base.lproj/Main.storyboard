@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5g-q6-8gP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19115.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="U5g-q6-8gP">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19107.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXt-u0-VRd">
-                                <rect key="frame" x="26" y="421" width="104" height="27"/>
+                                <rect key="frame" x="26" y="342.5" width="104" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R1V-NL-OPu">
-                                <rect key="frame" x="26" y="456" width="374" height="34"/>
+                                <rect key="frame" x="26" y="377.5" width="374" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="544-GE-OxZ"/>
@@ -33,7 +34,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8i8-uO-dOI">
-                                <rect key="frame" x="26" y="640" width="130" height="34"/>
+                                <rect key="frame" x="26" y="561.5" width="130" height="34"/>
                                 <color key="backgroundColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="Wgp-zP-ZI0"/>
@@ -58,23 +59,27 @@
                                     <segue destination="ZfA-ft-7GD" kind="presentation" id="rD8-HP-NM4"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good Hearted" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhy-yk-2ml">
-                                <rect key="frame" x="10" y="54" width="394" height="186.5"/>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="78"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Good " textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhy-yk-2ml">
+                                <rect key="frame" x="26" y="106" width="195" height="71"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="90"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="tDZ-rz-i42">
-                                <rect key="frame" x="135" y="245.5" width="144" height="120"/>
-                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hearted" textAlignment="center" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-dY-IHJ">
+                                <rect key="frame" x="66" y="185" width="314" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="90"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYk-7M-eMC">
-                                <rect key="frame" x="26" y="521" width="97.5" height="27"/>
+                                <rect key="frame" x="26" y="442.5" width="97.5" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qx3-zf-tS1">
-                                <rect key="frame" x="26" y="556" width="374" height="34"/>
+                                <rect key="frame" x="26" y="477.5" width="374" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="350" id="Pyr-oU-TPl"/>
@@ -84,7 +89,7 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAQ-nB-0yP">
-                                <rect key="frame" x="258" y="640" width="130" height="34"/>
+                                <rect key="frame" x="258" y="561.5" width="130" height="34"/>
                                 <color key="backgroundColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="MmQ-ae-eL8"/>
@@ -109,6 +114,10 @@
                                     <action selector="submitSignUpButton:" destination="ZfA-ft-7GD" eventType="touchUpInside" id="TkB-4j-hEP"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="tDZ-rz-i42">
+                                <rect key="frame" x="229" y="150" width="46" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2AV-UU-2TY"/>
                         <color key="backgroundColor" red="0.73360735180000003" green="0.85494124890000001" blue="0.88049334290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -116,30 +125,25 @@
                             <constraint firstItem="Qx3-zf-tS1" firstAttribute="centerX" secondItem="Hfe-UU-fO8" secondAttribute="centerX" constant="6" id="5Aw-An-u9N"/>
                             <constraint firstItem="rhy-yk-2ml" firstAttribute="centerX" secondItem="Hfe-UU-fO8" secondAttribute="centerX" id="8Xw-af-Z39"/>
                             <constraint firstItem="2AV-UU-2TY" firstAttribute="leading" secondItem="8i8-uO-dOI" secondAttribute="trailing" constant="-156" id="EfE-z9-gIW"/>
-                            <constraint firstItem="tDZ-rz-i42" firstAttribute="centerX" secondItem="Hfe-UU-fO8" secondAttribute="centerX" id="F6Q-79-AH9"/>
                             <constraint firstItem="zAQ-nB-0yP" firstAttribute="top" secondItem="Qx3-zf-tS1" secondAttribute="bottom" constant="50" id="FgJ-gg-iKS"/>
                             <constraint firstItem="ZYk-7M-eMC" firstAttribute="top" secondItem="R1V-NL-OPu" secondAttribute="bottom" constant="31" id="GQ3-Mu-pAX"/>
                             <constraint firstItem="R1V-NL-OPu" firstAttribute="top" secondItem="vXt-u0-VRd" secondAttribute="bottom" constant="8" symbolic="YES" id="H0b-vR-54j"/>
                             <constraint firstItem="2AV-UU-2TY" firstAttribute="trailing" secondItem="zAQ-nB-0yP" secondAttribute="trailing" constant="26" id="Iru-8S-Fos"/>
                             <constraint firstItem="R1V-NL-OPu" firstAttribute="top" secondItem="vXt-u0-VRd" secondAttribute="bottom" constant="8" id="NCl-DG-EZZ"/>
                             <constraint firstItem="ZYk-7M-eMC" firstAttribute="leading" secondItem="2AV-UU-2TY" secondAttribute="leading" constant="26" id="Obl-O1-jMu"/>
-                            <constraint firstItem="tDZ-rz-i42" firstAttribute="leading" secondItem="2AV-UU-2TY" secondAttribute="leading" constant="135" id="Oic-aY-kc3"/>
                             <constraint firstItem="R1V-NL-OPu" firstAttribute="top" secondItem="vXt-u0-VRd" secondAttribute="bottom" constant="8" id="RFA-Vi-DjU"/>
-                            <constraint firstItem="R1V-NL-OPu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tDZ-rz-i42" secondAttribute="bottom" constant="90.329999999999998" id="SPa-wb-SWW"/>
                             <constraint firstItem="8i8-uO-dOI" firstAttribute="leading" secondItem="2AV-UU-2TY" secondAttribute="leading" constant="26" id="Src-FF-tjr"/>
                             <constraint firstItem="Qx3-zf-tS1" firstAttribute="leading" secondItem="2AV-UU-2TY" secondAttribute="leading" constant="26" id="Vfl-wu-0j3"/>
                             <constraint firstItem="Qx3-zf-tS1" firstAttribute="top" secondItem="ZYk-7M-eMC" secondAttribute="bottom" constant="8" symbolic="YES" id="YFD-4Q-GUb"/>
                             <constraint firstItem="R1V-NL-OPu" firstAttribute="centerX" secondItem="Hfe-UU-fO8" secondAttribute="centerX" constant="6" id="Zmk-Yr-Byw"/>
                             <constraint firstItem="Qx3-zf-tS1" firstAttribute="top" secondItem="ZYk-7M-eMC" secondAttribute="bottom" constant="8" id="cQS-YC-HH8"/>
                             <constraint firstItem="8i8-uO-dOI" firstAttribute="top" secondItem="Qx3-zf-tS1" secondAttribute="bottom" constant="50" id="e1Y-f9-M5J"/>
-                            <constraint firstItem="tDZ-rz-i42" firstAttribute="top" secondItem="rhy-yk-2ml" secondAttribute="bottom" constant="5" id="gds-XC-kgn"/>
                             <constraint firstItem="vXt-u0-VRd" firstAttribute="top" secondItem="rhy-yk-2ml" secondAttribute="bottom" constant="180.33000000000001" id="nZ5-aS-7fr"/>
                             <constraint firstAttribute="trailing" secondItem="rhy-yk-2ml" secondAttribute="trailing" constant="10" id="qJk-zF-Zpc"/>
                             <constraint firstItem="R1V-NL-OPu" firstAttribute="leading" secondItem="2AV-UU-2TY" secondAttribute="leading" constant="26" id="s4s-hh-eEA"/>
                             <constraint firstItem="rhy-yk-2ml" firstAttribute="top" secondItem="2AV-UU-2TY" secondAttribute="top" constant="10" id="soB-Pa-XND"/>
                             <constraint firstItem="vXt-u0-VRd" firstAttribute="leading" secondItem="2AV-UU-2TY" secondAttribute="leading" constant="26" id="uaI-sb-dYi"/>
                             <constraint firstItem="rhy-yk-2ml" firstAttribute="leading" secondItem="Hfe-UU-fO8" secondAttribute="leading" constant="10" id="uxi-0c-axU"/>
-                            <constraint firstItem="2AV-UU-2TY" firstAttribute="trailing" secondItem="tDZ-rz-i42" secondAttribute="trailing" constant="135" id="xJt-oC-dQb"/>
                         </constraints>
                     </view>
                     <connections>
@@ -150,7 +154,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gnv-zq-Y6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2918.4615384615386" y="-285.78199052132697"/>
+            <point key="canvasLocation" x="-2918.840579710145" y="-285.9375"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="TGM-gK-pVa">
@@ -424,7 +428,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Emergency Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-5Z-ntk">
-                                <rect key="frame" x="26" y="66" width="362" height="135"/>
+                                <rect key="frame" x="26" y="66" width="337" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="135" id="J3p-WT-wmw"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="299" id="eSC-wO-Gd5"/>
@@ -434,7 +438,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="━━━━━━━━━━━" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCL-jY-Rsq">
-                                <rect key="frame" x="26" y="209" width="362" height="21"/>
+                                <rect key="frame" x="26" y="209" width="337" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Rhy-jC-W5Q"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="188" id="t57-cY-26U"/>
@@ -444,7 +448,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="━━━━━━━━━━━" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDI-BM-96i">
-                                <rect key="frame" x="26" y="295" width="362" height="21"/>
+                                <rect key="frame" x="26" y="295" width="337" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Nrt-R5-cQq"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="igr-uF-B1u"/>
@@ -491,7 +495,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="lco-Pg-ypV">
-                                <rect key="frame" x="26" y="378" width="362" height="34"/>
+                                <rect key="frame" x="26" y="378" width="337" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="dTS-VB-QZl"/>
@@ -502,7 +506,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="kUg-LA-XMi">
-                                <rect key="frame" x="26" y="470" width="362" height="34"/>
+                                <rect key="frame" x="26" y="470" width="337" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="337" id="nKP-I3-H1s"/>
@@ -514,7 +518,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aWr-rJ-Jrw">
-                                <rect key="frame" x="26" y="558" width="362" height="34"/>
+                                <rect key="frame" x="26" y="558" width="337" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="337" id="Iic-Ni-c6c"/>
@@ -552,7 +556,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="With GoodHearted, you can set up a list of your emergency contacts!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FO8-Ql-oVJ">
-                                <rect key="frame" x="26" y="231" width="362" height="56"/>
+                                <rect key="frame" x="26" y="231" width="337" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="108" id="Wfi-3V-tuP"/>
                                     <constraint firstAttribute="width" constant="337" id="dcr-nT-sbv"/>
@@ -707,7 +711,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EmergencyContactCell" rowHeight="80" id="RWg-9Y-BIK" customClass="EmergencyContactCell" customModule="GoodHearted" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="800" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="800" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RWg-9Y-BIK" id="SbV-fi-est">
                                             <rect key="frame" x="0.0" y="0.0" width="800" height="80"/>
@@ -1061,8 +1065,8 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2. Or use online First Aid manual: " lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnx-Qq-3uE">
-                                <rect key="frame" x="20" y="310" width="394" height="31.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Or use online First Aid manual: " lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnx-Qq-3uE">
+                                <rect key="frame" x="20" y="278" width="394" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1077,14 +1081,14 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://drive.google.com/file/d/1_H7ELxFv9T0PXfvi-74KLHPVvoPYnQ7j/view" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asl-MV-iT7">
-                                <rect key="frame" x="20" y="357.5" width="328" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://drive.google.com/file/d/1_H7ELxFv9T0PXfvi-74KLHPVvoPYnQ7j/view" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="asl-MV-iT7">
+                                <rect key="frame" x="20" y="325.5" width="328" height="46"/>
                                 <color key="textColor" systemColor="systemBlueColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aam-6b-1lf">
-                                <rect key="frame" x="0.0" y="431" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="465" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HBd-bw-maP"/>
                                     <constraint firstAttribute="width" constant="414" id="kfW-e9-M29"/>
@@ -1107,7 +1111,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-3Q-pFE">
-                                <rect key="frame" x="0.0" y="491" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="525" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="KEa-YC-LJe"/>
                                     <constraint firstAttribute="width" constant="414" id="YMC-Bl-eIb"/>
@@ -1130,7 +1134,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHT-hn-pts">
-                                <rect key="frame" x="0.0" y="551" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="585" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="0Cq-JM-fLv"/>
                                     <constraint firstAttribute="width" constant="414" id="U7y-Hg-6Ox"/>
@@ -1153,7 +1157,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFX-WM-Rpy">
-                                <rect key="frame" x="0.0" y="611" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="645" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Hxq-ti-0oZ"/>
                                     <constraint firstAttribute="width" constant="414" id="Qj4-ra-EAn"/>
@@ -1176,7 +1180,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgD-0K-r1E">
-                                <rect key="frame" x="0.0" y="671" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="705" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="QgK-Fr-0nx"/>
                                     <constraint firstAttribute="width" constant="414" id="d4U-Oz-XSj"/>
@@ -1199,7 +1203,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGi-jD-azd">
-                                <rect key="frame" x="0.0" y="731" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="765" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="LBM-Yq-Kaq"/>
                                     <constraint firstAttribute="height" constant="60" id="sQe-ya-Mx4"/>
@@ -1232,7 +1236,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common Emergencies:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6U-x3-WVK">
-                                <rect key="frame" x="0.0" y="371" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="405" width="414" height="60"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="6Sz-Hy-tOx"/>
@@ -1468,37 +1472,52 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PD-lj-MIG">
-                                <rect key="frame" x="40" y="69" width="112" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PD-lj-MIG">
+                                <rect key="frame" x="40" y="69" width="111" height="111"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="3k2-Fp-tqd"/>
+                                    <constraint firstAttribute="width" constant="112" id="LX8-Sh-vqS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" image="emergency button"/>
                                 <connections>
                                     <action selector="emergencyButton:" destination="ahC-zh-xFH" eventType="touchUpInside" id="8Xh-US-BSq"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wKZ-db-Ys5">
-                                <rect key="frame" x="0.0" y="230.5" width="414" height="529"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wKZ-db-Ys5">
+                                <rect key="frame" x="0.0" y="264" width="414" height="529"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="529" id="Onf-pe-fHT"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="kvY-MR-f1d"/>
+                                </constraints>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-pw-5sy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3d5-pw-5sy">
                                 <rect key="frame" x="263" y="69" width="111" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="Y0Q-Gc-xMa"/>
+                                    <constraint firstAttribute="height" constant="111" id="uRC-87-vSM"/>
+                                </constraints>
                                 <state key="normal" image="new"/>
                                 <connections>
                                     <action selector="notifyButton:" destination="ahC-zh-xFH" eventType="touchUpInside" id="WSb-u4-Ug3"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Emergency Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBF-qL-O8Y">
-                                <rect key="frame" x="22" y="188" width="170" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emergency Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mBF-qL-O8Y">
+                                <rect key="frame" x="20" y="188" width="170" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="K0B-lY-Ghx"/>
+                                    <constraint firstAttribute="height" constant="24" id="Mih-HQ-Maz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notify Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te3-cn-oeW">
-                                <rect key="frame" x="240" y="184" width="154" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notify Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te3-cn-oeW">
+                                <rect key="frame" x="240" y="188" width="154" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="TDi-ae-m1Z"/>
+                                    <constraint firstAttribute="width" constant="154" id="fXn-V8-xzz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -1506,6 +1525,24 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Sim-Ds-uRt"/>
                         <color key="backgroundColor" red="0.73715537789999996" green="0.85495072599999999" blue="0.87832415100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3d5-pw-5sy" firstAttribute="top" secondItem="Sim-Ds-uRt" secondAttribute="top" constant="13" id="0UG-nT-4a9"/>
+                            <constraint firstItem="Sim-Ds-uRt" firstAttribute="trailing" secondItem="te3-cn-oeW" secondAttribute="trailing" constant="20" id="0Ug-lf-p2m"/>
+                            <constraint firstItem="wKZ-db-Ys5" firstAttribute="trailing" secondItem="Sim-Ds-uRt" secondAttribute="trailing" id="3QA-fK-3y3"/>
+                            <constraint firstItem="wKZ-db-Ys5" firstAttribute="leading" secondItem="Sim-Ds-uRt" secondAttribute="leading" id="4XQ-lt-lRU"/>
+                            <constraint firstItem="mBF-qL-O8Y" firstAttribute="top" secondItem="1PD-lj-MIG" secondAttribute="bottom" constant="8" id="5qO-Gr-zJL"/>
+                            <constraint firstItem="3d5-pw-5sy" firstAttribute="leading" secondItem="1PD-lj-MIG" secondAttribute="trailing" constant="111" id="Gzc-tm-qsO"/>
+                            <constraint firstItem="1PD-lj-MIG" firstAttribute="top" secondItem="Sim-Ds-uRt" secondAttribute="top" constant="13" id="Kfl-cc-eZ9"/>
+                            <constraint firstItem="wKZ-db-Ys5" firstAttribute="top" secondItem="mBF-qL-O8Y" secondAttribute="bottom" constant="52" id="LkI-17-794"/>
+                            <constraint firstItem="Sim-Ds-uRt" firstAttribute="bottom" secondItem="wKZ-db-Ys5" secondAttribute="bottom" id="OCR-hW-sMh"/>
+                            <constraint firstItem="wKZ-db-Ys5" firstAttribute="top" secondItem="te3-cn-oeW" secondAttribute="bottom" constant="52" id="Tor-nH-y0l"/>
+                            <constraint firstItem="te3-cn-oeW" firstAttribute="top" secondItem="3d5-pw-5sy" secondAttribute="bottom" constant="8" id="eIF-NH-mHr"/>
+                            <constraint firstItem="te3-cn-oeW" firstAttribute="leading" secondItem="mBF-qL-O8Y" secondAttribute="trailing" constant="50" id="g0v-5g-36I"/>
+                            <constraint firstItem="mBF-qL-O8Y" firstAttribute="leading" secondItem="Sim-Ds-uRt" secondAttribute="leading" constant="20" id="gcg-j6-KKK"/>
+                            <constraint firstItem="3d5-pw-5sy" firstAttribute="leading" secondItem="1PD-lj-MIG" secondAttribute="trailing" constant="112" id="sva-Az-FUt"/>
+                            <constraint firstItem="Sim-Ds-uRt" firstAttribute="trailing" secondItem="3d5-pw-5sy" secondAttribute="trailing" constant="40" id="wuX-3D-8N7"/>
+                            <constraint firstItem="1PD-lj-MIG" firstAttribute="leading" secondItem="Sim-Ds-uRt" secondAttribute="leading" constant="40" id="zLs-hy-hoJ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="homekit" catalog="system" selectedImage="homekit" id="SAq-e9-9SW"/>
                     <connections>
@@ -1573,14 +1610,14 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="NotificationCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="300" id="b1f-8y-egv" customClass="NotificationCell" customModule="GoodHearted" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="300"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b1f-8y-egv" id="ftw-vB-QFp">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fye-aZ-YDk">
-                                                    <rect key="frame" x="270.5" y="24" width="123.5" height="18"/>
+                                                    <rect key="frame" x="271" y="24" width="123" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.1960252821" green="0.29807770249999999" blue="0.72932004930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1593,7 +1630,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JF3-C9-dam">
-                                                    <rect key="frame" x="78" y="24" width="92.5" height="24"/>
+                                                    <rect key="frame" x="78" y="24" width="93" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                                     <color key="textColor" red="0.1960252821" green="0.29807770249999999" blue="0.72932004930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -1853,7 +1890,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kLG-qW-jr6">
-                            <rect key="frame" x="0.0" y="156" width="414" height="44"/>
+                            <rect key="frame" x="0.0" y="178" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -1871,7 +1908,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                         </button>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="Bve-gY-dW4" customClass="EditEmergencyContactCell" customModule="GoodHearted" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="50" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bve-gY-dW4" id="QjT-fW-LjI">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>

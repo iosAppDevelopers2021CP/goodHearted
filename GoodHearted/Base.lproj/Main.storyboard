@@ -423,7 +423,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Emergency Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-5Z-ntk">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Emergency Contacts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Odc-5Z-ntk">
                                 <rect key="frame" x="26" y="66" width="362" height="135"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="135" id="J3p-WT-wmw"/>
@@ -682,15 +682,17 @@
                                     <constraint firstAttribute="height" constant="61" id="iqu-4o-Fmc"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhoneNumerS" translatesAutoresizingMaskIntoConstraints="NO" id="Mvh-X7-JJ3">
-                                <rect key="frame" x="103" y="373" width="52" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Mvh-X7-JJ3">
+                                <rect key="frame" x="103" y="373.5" width="52" height="32.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Whp-Ni-WuN"/>
                                     <constraint firstAttribute="width" constant="52" id="fLj-59-XFI"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmergencyContact" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-FA-rhr">
-                                <rect key="frame" x="26" y="427" width="43" height="41"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="person.3.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jGO-FA-rhr">
+                                <rect key="frame" x="26" y="436.5" width="43" height="38"/>
+                                <color key="tintColor" red="0.85995823140000005" green="0.2679456174" blue="0.30057573319999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="RSV-Df-75x"/>
                                     <constraint firstAttribute="width" constant="43" id="juk-9w-xXa"/>
@@ -762,8 +764,9 @@
                                 <color key="textColor" red="0.85099571939999996" green="0.27452802659999997" blue="0.3137080371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailS" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-ar-u3R">
-                                <rect key="frame" x="103" y="328" width="52" height="34"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-ar-u3R">
+                                <rect key="frame" x="103" y="329.5" width="52" height="30.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="1rt-uP-aBN"/>
                                     <constraint firstAttribute="width" constant="52" id="em4-ZH-5t2"/>
@@ -840,7 +843,7 @@
                                     <constraint firstAttribute="height" constant="11" id="ZJL-Bj-887"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWn-5F-uiO">
@@ -855,6 +858,7 @@ American Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/per
 
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDu-At-cFz">
@@ -863,13 +867,13 @@ American Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/per
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="American Red Cross First Aid Quick Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zb-sW-bCh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="American Red Cross First Aid Quick Guide" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zb-sW-bCh">
                                 <rect key="frame" x="17.5" y="88" width="379" height="146"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="146" id="BKS-zB-YWl"/>
                                     <constraint firstAttribute="width" constant="379" id="vhD-lF-4TW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="36"/>
                                 <color key="textColor" systemColor="systemRedColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -881,7 +885,7 @@ American Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/per
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="1. Check">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -906,7 +910,7 @@ American Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/per
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="2. Call">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -933,7 +937,7 @@ American Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/per
 
 Download the Free American Red Cross First Aid &amp; Emergency Preparedness App</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lP6-kj-A0n">
@@ -954,7 +958,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="3. Care">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
@@ -1027,21 +1031,21 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Check Scene: If Scene is not safe, exit the area. Otherwise, continue below instructions." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JtF-Dh-kiI">
                                 <rect key="frame" x="24" y="88" width="367" height="130"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgV-el-yEH">
                                 <rect key="frame" x="24" y="251" width="365" height="192"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">2. Check Person: Is the person who need help in a life threatening emergency? If yes, call 911 immediately. Otherwise, check out Care section.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="26"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sm8-UP-trq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.72955566640000002" green="0.85495418310000004" blue="0.88052982089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Check" id="8wa-mb-pkE"/>
                 </viewController>
@@ -1060,7 +1064,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Or use online First Aid manual: " lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pnx-Qq-3uE">
                                 <rect key="frame" x="20" y="310" width="394" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NpJ-yK-s8k">
@@ -1088,7 +1092,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Asthma">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1111,7 +1115,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Bleeding">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1134,7 +1138,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Burns">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1157,7 +1161,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Choking">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1180,7 +1184,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Heart Attack">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1203,7 +1207,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Lightning">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -1224,7 +1228,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                     <constraint firstAttribute="height" constant="151" id="vgY-la-iZL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Common Emergencies:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6U-x3-WVK">
@@ -1235,12 +1239,12 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                     <constraint firstAttribute="height" constant="60" id="xkz-ik-vY1"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="I2B-4P-mAF"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.72955566640000002" green="0.85495418310000004" blue="0.88052982089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="I2B-4P-mAF" firstAttribute="trailing" secondItem="jgD-0K-r1E" secondAttribute="trailing" id="1L9-kR-cny"/>
                             <constraint firstItem="I2B-4P-mAF" firstAttribute="bottom" secondItem="tGi-jD-azd" secondAttribute="bottom" constant="17" id="2mj-ZN-z7r"/>
@@ -1296,7 +1300,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
 2. Otherwise, skip below and apply Care
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ua-f6-Tpz">
@@ -1306,7 +1310,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
 * If the person is unconscious, apply ABC. 
 </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="22" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWq-Mh-Es4">
@@ -1316,26 +1320,26 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
 * Breathing: Listen to the person's breathing while observing the person's chest for any sign of breathing for 10 seconds. 
 * Circulation: Check the person's pulse. If no pulse, apply CPR. If the person has a regular pulse, apply for a recovery position.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="After Call 911: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvf-UK-XMO">
                                 <rect key="frame" x="20" y="247" width="394" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ABC: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOU-AI-NOP">
                                 <rect key="frame" x="20" y="434" width="394" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KNm-P4-gyj"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.72955566640000002" green="0.85495418310000004" blue="0.88052982089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Call" id="6Kh-4Y-zLl"/>
                 </viewController>
@@ -1373,28 +1377,30 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailS" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-lM-nhS">
-                                <rect key="frame" x="20" y="400" width="53" height="38"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-lM-nhS">
+                                <rect key="frame" x="20" y="401.5" width="53" height="34.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="GZR-Il-FlM"/>
                                     <constraint firstAttribute="height" constant="38" id="Yk7-Ws-bfJ"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhoneNumerS" translatesAutoresizingMaskIntoConstraints="NO" id="uX4-zS-f3K">
-                                <rect key="frame" x="20" y="472" width="53" height="38"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="uX4-zS-f3K">
+                                <rect key="frame" x="20" y="472.5" width="53" height="36.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="2Bb-8Z-y1X"/>
                                     <constraint firstAttribute="height" constant="38" id="WCP-20-VyH"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oFH-cs-kzK">
-                                <rect key="frame" x="138" y="329" width="138" height="34"/>
+                                <rect key="frame" x="147" y="329" width="120" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="FVV-4p-zO4"/>
                                 </constraints>
                                 <color key="textColor" red="0.1960252821" green="0.29807770249999999" blue="0.72932004930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="vy9-OC-dTd">
@@ -1468,6 +1474,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Zby-q8-a9h"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="spr-3a-HuV"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <state key="normal" image="EmergencyButton"/>
                                 <connections>
                                     <action selector="emergencyButton:" destination="ahC-zh-xFH" eventType="touchUpInside" id="8Xh-US-BSq"/>
@@ -1533,7 +1540,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                     <constraint firstAttribute="height" constant="24" id="gea-ff-s0L"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAz-t9-5fv">
@@ -1542,6 +1549,7 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                     <constraint firstAttribute="height" constant="31" id="5BV-be-qEH"/>
                                     <constraint firstAttribute="width" constant="47" id="U1a-0a-Wxi"/>
                                 </constraints>
+                                <color key="tintColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </switch>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="U6k-Qf-3jz"/>
@@ -1946,18 +1954,20 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
                                     <constraint firstAttribute="width" constant="210" id="nYf-JB-Fwn"/>
                                 </constraints>
                                 <color key="textColor" red="0.1960252821" green="0.29807770249999999" blue="0.72932004930000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="42"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EmailS" translatesAutoresizingMaskIntoConstraints="NO" id="cr4-JH-sb9">
-                                <rect key="frame" x="26" y="431" width="53" height="38"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cr4-JH-sb9">
+                                <rect key="frame" x="26" y="432.5" width="53" height="34.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="W5T-lU-ztU"/>
                                     <constraint firstAttribute="height" constant="38" id="sNx-Mr-47A"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PhoneNumerS" translatesAutoresizingMaskIntoConstraints="NO" id="Ykn-dk-lCL">
-                                <rect key="frame" x="26" y="369" width="53" height="38"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Ykn-dk-lCL">
+                                <rect key="frame" x="26" y="369.5" width="53" height="36.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="AIP-di-HeZ"/>
                                     <constraint firstAttribute="height" constant="38" id="NnE-bj-tif"/>
@@ -2253,18 +2263,18 @@ Download the Free American Red Cross First Aid &amp; Emergency Preparedness App<
         <segue reference="0JE-39-Y9Y"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="EmailS" width="25" height="25"/>
         <image name="EmergencyButton" width="120" height="120"/>
-        <image name="EmergencyContact" width="32" height="32"/>
         <image name="HeartS" width="87" height="79"/>
         <image name="NotificationButton" width="120" height="120"/>
-        <image name="PhoneNumerS" width="25" height="25"/>
         <image name="bell" catalog="system" width="128" height="124"/>
         <image name="chevron.right" catalog="system" width="96" height="128"/>
+        <image name="envelope" catalog="system" width="128" height="93"/>
         <image name="gearshape" catalog="system" width="128" height="121"/>
         <image name="heart" width="120" height="120"/>
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
         <image name="user" width="512" height="512"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

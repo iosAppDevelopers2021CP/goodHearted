@@ -13,6 +13,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
 
     var refreshControl: UIRefreshControl!
     var Notification = [PFObject]()
+    let user = PFUser.current()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -32,8 +33,10 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        let date = self.user?.createdAt
         let query = PFQuery(className: "Notification")
         query.includeKeys(["Author", "Message", "createdAt"])
+        query.whereKey("createdAt", greaterThanOrEqualTo: date!)
         //query.limit = 20
         
         query.findObjectsInBackground { (Notification, error) in

@@ -78,7 +78,6 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         dateFormatter.dateStyle = .short
         dateFormatter.timeStyle = .short
         cell.date.text = dateFormatter.string(from: date!)
-        print(cell.date.text)
         return cell
     }
     /*

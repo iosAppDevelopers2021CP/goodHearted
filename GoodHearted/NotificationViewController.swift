@@ -34,7 +34,7 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
         super.viewDidAppear(animated)
         let query = PFQuery(className: "Notification")
         query.includeKeys(["Author", "Message", "createdAt"])
-        query.limit = 20
+        //query.limit = 20
         
         query.findObjectsInBackground { (Notification, error) in
                 if Notification != nil

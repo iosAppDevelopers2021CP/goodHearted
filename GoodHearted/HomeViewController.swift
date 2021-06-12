@@ -47,6 +47,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         let confirmAction = UIAlertAction(
             title: "OK", style: .default) { (action) in
             self.playSound()
+            self.saveNotification()
             self.counter = 5
             self.sendEmergencyText()
             self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(self.updateCounter), userInfo: nil, repeats: true)
@@ -163,7 +164,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     @IBAction func notifyButton(_ sender: Any) {
         let alertController = UIAlertController(
             title: "Calling for Help?",
-            message: "This will notify nearby users that you are feeling unsafe",
+            message: "This will notify all of your emergency contacts that you are feeling unsafe",
             preferredStyle: .alert
         )
 

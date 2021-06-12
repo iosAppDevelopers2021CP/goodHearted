@@ -164,7 +164,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     @IBAction func notifyButton(_ sender: Any) {
         let alertController = UIAlertController(
             title: "Calling for Help?",
-            message: "This will notify nearby users that you are feeling unsafe",
+            message: "This will notify all of your emergency contacts that you are feeling unsafe",
             preferredStyle: .alert
         )
 

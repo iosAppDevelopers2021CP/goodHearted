@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="GoodHearted/Base.lproj/LaunchScreen.storyboard" datatype="plaintext" source-language="en" target-language="vi">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.3" build-num="12C33"/>
+    </header>
+    <body>
+      <trans-unit id="0eL-mE-3Re.text" xml:space="preserve">
+        <source>Hearted</source>
+        <note>Class = "UILabel"; text = "Hearted"; ObjectID = "0eL-mE-3Re";</note>
+      </trans-unit>
+      <trans-unit id="ANL-xP-jgP.text" xml:space="preserve">
+        <source>Good</source>
+        <note>Class = "UILabel"; text = "Good"; ObjectID = "ANL-xP-jgP";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="GoodHearted/Base.lproj/Main.storyboard" source-language="en" target-language="vi" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.3" build-num="12C33"/>
+    </header>
+    <body>
+      <trans-unit id="0x8-Yp-fWD.title" xml:space="preserve">
+        <source>Privacy</source>
+        <target>Quyền riêng tư</target>
+        <note>Class = "UINavigationItem"; title = "Privacy"; ObjectID = "0x8-Yp-fWD";</note>
+      </trans-unit>
+      <trans-unit id="1Fd-D7-Ctc.text" xml:space="preserve">
+        <source>Emergency Contact's Full Name:</source>
+        <target>Họ tên người liên lạc khẩn cấp của bạn:</target>
+        <note>Class = "UILabel"; text = "Emergency Contact's Full Name:"; ObjectID = "1Fd-D7-Ctc";</note>
+      </trans-unit>
+      <trans-unit id="2aY-qR-VVQ.title" xml:space="preserve">
+        <source>Notification</source>
+        <target>Thông báo</target>
+        <note>Class = "UINavigationItem"; title = "Notification"; ObjectID = "2aY-qR-VVQ";</note>
+      </trans-unit>
+      <trans-unit id="3ua-f6-Tpz.text" xml:space="preserve">
+        <source>* If the person is conscious, apply First Aid Care.
+* If the person is unconscious, apply ABC. 
+</source>
+        <target>* If the person is conscious, apply First Aid Care.
+* If the person is unconscious, apply ABC. 
+</target>
+        <note>Class = "UILabel"; text = "* If the person is conscious, apply First Aid Care.\n* If the person is unconscious, apply ABC. \n"; ObjectID = "3ua-f6-Tpz";</note>
+      </trans-unit>
+      <trans-unit id="5wr-8j-tOP.title" xml:space="preserve">
+        <source>Save</source>
+        <target>Lưu</target>
+        <note>Class = "UIBarButtonItem"; title = "Save"; ObjectID = "5wr-8j-tOP";</note>
+      </trans-unit>
+      <trans-unit id="6Kh-4Y-zLl.title" xml:space="preserve">
+        <source>Call</source>
+        <target>Gọi</target>
+        <note>Class = "UINavigationItem"; title = "Call"; ObjectID = "6Kh-4Y-zLl";</note>
+      </trans-unit>
+      <trans-unit id="6ZD-92-91T.normalTitle" xml:space="preserve">
+        <source>2. Call</source>
+        <target>2. Gọi</target>
+        <note>Class = "UIButton"; normalTitle = "2. Call"; ObjectID = "6ZD-92-91T";</note>
+      </trans-unit>
+      <trans-unit id="6Zb-sW-bCh.text" xml:space="preserve">
+        <source>American Red Cross First Aid Quick Guide</source>
+        <target>American Red Cross First Aid Quick Guide</target>
+        <note>Class = "UILabel"; text = "American Red Cross First Aid Quick Guide"; ObjectID = "6Zb-sW-bCh";</note>
+      </trans-unit>
+      <trans-unit id="8i8-uO-dOI.normalTitle" xml:space="preserve">
+        <source>Sign Up</source>
+        <target>Đăng kí</target>
+        <note>Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "8i8-uO-dOI";</note>
+      </trans-unit>
+      <trans-unit id="8wa-mb-pkE.title" xml:space="preserve">
+        <source>Check</source>
+        <target>Kiểm tra</target>
+        <note>Class = "UINavigationItem"; title = "Check"; ObjectID = "8wa-mb-pkE";</note>
+      </trans-unit>
+      <trans-unit id="9EN-rx-c5V.normalTitle" xml:space="preserve">
+        <source>    Emergency Contacts                                                  </source>
+        <target>    Liên lạc khẩn cấp                                                  </target>
+        <note>Class = "UIButton"; normalTitle = "    Emergency Contacts                                                  "; ObjectID = "9EN-rx-c5V";</note>
+      </trans-unit>
+      <trans-unit id="37l-Hk-WJc.text" xml:space="preserve">
+        <source>1. Recommended: Use the free American Red Cross First Aid &amp; Emergency Preparedness App. </source>
+        <target>1. Nên dùng: Ứng dụng miễn phí từ Hội Chữ Thập Đỏ Hoa Kì về Sơ Cứu và Đề Phòng Trường Hợp Khẩn Cấp. </target>
+        <note>Class = "UILabel"; text = "1. Recommended: Use the free American Red Cross First Aid &amp; Emergency Preparedness App. "; ObjectID = "37l-Hk-WJc";</note>
+      </trans-unit>
+      <trans-unit id="AMr-H0-drh.title" xml:space="preserve">
+        <source>Profile</source>
+        <target>Trang cá nhân</target>
+        <note>Class = "UIViewController"; title = "Profile"; ObjectID = "AMr-H0-drh";</note>
+      </trans-unit>
+      <trans-unit id="Aam-6b-1lf.normalTitle" xml:space="preserve">
+        <source>Asthma</source>
+        <target>Hen suyễn</target>
+        <note>Class = "UIButton"; normalTitle = "Asthma"; ObjectID = "Aam-6b-1lf";</note>
+      </trans-unit>
+      <trans-unit id="Au8-Jh-HLh.text" xml:space="preserve">
+        <source>Emergency Contact</source>
+        <target>Liên lạc khẩn cấp</target>
+        <note>Class = "UILabel"; text = "Emergency Contact"; ObjectID = "Au8-Jh-HLh";</note>
+      </trans-unit>
+      <trans-unit id="BFv-2F-T2U.text" xml:space="preserve">
+        <source>By switching on this box, you have agreed to GoodHearted's Term and Policies.</source>
+        <target>Bằng cách chuyển nút này, người dùng đã đồng ý vào điều khoản đăng kí của ứng dụng.</target>
+        <note>Class = "UILabel"; text = "By switching on this box, you have agreed to GoodHearted's Term and Policies."; ObjectID = "BFv-2F-T2U";</note>
+      </trans-unit>
+      <trans-unit id="Bbx-Pz-av3.text" xml:space="preserve">
+        <source>Username:</source>
+        <target>Tên đăng nhập:</target>
+        <note>Class = "UILabel"; text = "Username:"; ObjectID = "Bbx-Pz-av3";</note>
+      </trans-unit>
+      <trans-unit id="Bm6-gb-tfY.title" xml:space="preserve">
+        <source>Item</source>
+        <target>Item</target>
+        <note>Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Bm6-gb-tfY";</note>
+      </trans-unit>
+      <trans-unit id="FO8-Ql-oVJ.text" xml:space="preserve">
+        <source>With GoodHearted, you can set up a list of your emergency contacts!</source>
+        <target>With GoodHearted, you can set up a list of your emergency contacts!</target>
+        <note>Class = "UILabel"; text = "With GoodHearted, you can set up a list of your emergency contacts!"; ObjectID = "FO8-Ql-oVJ";</note>
+      </trans-unit>
+      <trans-unit id="HQH-gL-jLD.normalTitle" xml:space="preserve">
+        <source>    First Aid Booklet                                                   </source>
+        <target>    First Aid Booklet                                                   </target>
+        <note>Class = "UIButton"; normalTitle = "    First Aid Booklet                                                   "; ObjectID = "HQH-gL-jLD";</note>
+      </trans-unit>
+      <trans-unit id="I2Y-4N-9JO.normalTitle" xml:space="preserve">
+        <source>    Edit Profile                                                   </source>
+        <target>    Chỉnh sửa trang cá nhân                                                   </target>
+        <note>Class = "UIButton"; normalTitle = "    Edit Profile                                                   "; ObjectID = "I2Y-4N-9JO";</note>
+      </trans-unit>
+      <trans-unit id="IDI-BM-96i.text" xml:space="preserve">
+        <source>━━━━━━━━━━━</source>
+        <target>━━━━━━━━━━━</target>
+        <note>Class = "UILabel"; text = "━━━━━━━━━━━"; ObjectID = "IDI-BM-96i";</note>
+      </trans-unit>
+      <trans-unit id="IFH-5N-4ve.text" xml:space="preserve">
+        <source>Number</source>
+        <target>Số điện thoại</target>
+        <note>Class = "UILabel"; text = "Number"; ObjectID = "IFH-5N-4ve";</note>
+      </trans-unit>
+      <trans-unit id="JF3-C9-dam.text" xml:space="preserve">
+        <source>Username</source>
+        <target>Tên đăng nhập</target>
+        <note>Class = "UILabel"; text = "Username"; ObjectID = "JF3-C9-dam";</note>
+      </trans-unit>
+      <trans-unit id="Jf9-VC-XNC.title" xml:space="preserve">
+        <source>First Aid Booklet</source>
+        <target>Tuyển tập những cách sơ cứu</target>
+        <note>Class = "UINavigationItem"; title = "First Aid Booklet"; ObjectID = "Jf9-VC-XNC";</note>
+      </trans-unit>
+      <trans-unit id="JtF-Dh-kiI.text" xml:space="preserve">
+        <source>1. Check Scene: If Scene is not safe, exit the area. Otherwise, continue below instructions.</source>
+        <target>1. Check Scene: If Scene is not safe, exit the area. Otherwise, continue below instructions.</target>
+        <note>Class = "UILabel"; text = "1. Check Scene: If Scene is not safe, exit the area. Otherwise, continue below instructions."; ObjectID = "JtF-Dh-kiI";</note>
+      </trans-unit>
+      <trans-unit id="JvW-Qw-T8h.normalTitle" xml:space="preserve">
+        <source>Sign Up</source>
+        <target>Đăng kí</target>
+        <note>Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "JvW-Qw-T8h";</note>
+      </trans-unit>
+      <trans-unit id="KCL-jY-Rsq.text" xml:space="preserve">
+        <source>━━━━━━━━━━━</source>
+        <target>━━━━━━━━━━━</target>
+        <note>Class = "UILabel"; text = "━━━━━━━━━━━"; ObjectID = "KCL-jY-Rsq";</note>
+      </trans-unit>
+      <trans-unit id="L1t-WD-uXo.text" xml:space="preserve">
+        <source>Hello! We're glad you're here! Let's sign up</source>
+        <target>Xin chào! Chúng tôi rất vui vì bạn ở đây! Hãy bắt đầu đăng kí tài khoản</target>
+        <note>Class = "UILabel"; text = "Hello! We're glad you're here! Let's sign up"; ObjectID = "L1t-WD-uXo";</note>
+      </trans-unit>
+      <trans-unit id="Lkl-c2-T9O.normalTitle" xml:space="preserve">
+        <source>    Sign Out                                           </source>
+        <target>    Đăng xuất                                           </target>
+        <note>Class = "UIButton"; normalTitle = "    Sign Out                                           "; ObjectID = "Lkl-c2-T9O";</note>
+      </trans-unit>
+      <trans-unit id="NAk-c2-gE1.text" xml:space="preserve">
+        <source>(A friendly reminder guide for First Aid and CPR certificated individuals)</source>
+        <target>(A friendly reminder guide for First Aid and CPR certificated individuals)</target>
+        <note>Class = "UILabel"; text = "(A friendly reminder guide for First Aid and CPR certificated individuals)"; ObjectID = "NAk-c2-gE1";</note>
+      </trans-unit>
+      <trans-unit id="NOU-AI-NOP.text" xml:space="preserve">
+        <source>ABC: </source>
+        <target>ABC: </target>
+        <note>Class = "UILabel"; text = "ABC: "; ObjectID = "NOU-AI-NOP";</note>
+      </trans-unit>
+      <trans-unit id="NpJ-yK-s8k.text" xml:space="preserve">
+        <source>https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html</source>
+        <target>https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html</target>
+        <note>Class = "UITextField"; text = "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html"; ObjectID = "NpJ-yK-s8k";</note>
+      </trans-unit>
+      <trans-unit id="OAO-oB-LmC.text" xml:space="preserve">
+        <source>Prepare Before Rain: 
+
+Download the Free American Red Cross First Aid &amp; Emergency Preparedness App</source>
+        <target>Prepare Before Rain: 
+
+Download the Free American Red Cross First Aid &amp; Emergency Preparedness App</target>
+        <note>Class = "UILabel"; text = "Prepare Before Rain: \n\nDownload the Free American Red Cross First Aid &amp; Emergency Preparedness App"; ObjectID = "OAO-oB-LmC";</note>
+      </trans-unit>
+      <trans-unit id="Odc-5Z-ntk.text" xml:space="preserve">
+        <source>Add Emergency Contacts</source>
+        <target>Thêm liên lạc khẩn cấp</target>
+        <note>Class = "UILabel"; text = "Add Emergency Contacts"; ObjectID = "Odc-5Z-ntk";</note>
+      </trans-unit>
+      <trans-unit id="Pnx-Qq-3uE.text" xml:space="preserve">
+        <source>2. Or use online First Aid manual: </source>
+        <target>2. Or use online First Aid manual: </target>
+        <note>Class = "UILabel"; text = "2. Or use online First Aid manual: "; ObjectID = "Pnx-Qq-3uE";</note>
+      </trans-unit>
+      <trans-unit id="Pth-U7-Q4R.normalTitle" xml:space="preserve">
+        <source>    Privacy                                                   </source>
+        <target>    Quyền riêng tư                                                   </target>
+        <note>Class = "UIButton"; normalTitle = "    Privacy                                                   "; ObjectID = "Pth-U7-Q4R";</note>
+      </trans-unit>
+      <trans-unit id="QhM-vC-JL3.normalTitle" xml:space="preserve">
+        <source>Add</source>
+        <target>Thêm</target>
+        <note>Class = "UIButton"; normalTitle = "Add"; ObjectID = "QhM-vC-JL3";</note>
+      </trans-unit>
+      <trans-unit id="R6U-x3-WVK.text" xml:space="preserve">
+        <source>Common Emergencies:</source>
+        <target>Common Emergencies:</target>
+        <note>Class = "UILabel"; text = "Common Emergencies:"; ObjectID = "R6U-x3-WVK";</note>
+      </trans-unit>
+      <trans-unit id="Upq-0P-SgB.text" xml:space="preserve">
+        <source>Phone Number:</source>
+        <target>Số điện thoại:</target>
+        <note>Class = "UILabel"; text = "Phone Number:"; ObjectID = "Upq-0P-SgB";</note>
+      </trans-unit>
+      <trans-unit id="V8r-vu-Gd0.text" xml:space="preserve">
+        <source>grandpa@gmail.com</source>
+        <target>grandpa@gmail.com</target>
+        <note>Class = "UILabel"; text = "grandpa@gmail.com"; ObjectID = "V8r-vu-Gd0";</note>
+      </trans-unit>
+      <trans-unit id="VtJ-Y1-v57.text" xml:space="preserve">
+        <source>Password</source>
+        <target>Mật khẩu</target>
+        <note>Class = "UILabel"; text = "Password"; ObjectID = "VtJ-Y1-v57";</note>
+      </trans-unit>
+      <trans-unit id="WBS-hi-eYt.text" xml:space="preserve">
+        <source>Emergency Contacts</source>
+        <target>Liên lạc khẩn cấp</target>
+        <note>Class = "UILabel"; text = "Emergency Contacts"; ObjectID = "WBS-hi-eYt";</note>
+      </trans-unit>
+      <trans-unit id="Whe-Py-nYE.normalTitle" xml:space="preserve">
+        <source>Back</source>
+        <target>Quay lại</target>
+        <note>Class = "UIButton"; normalTitle = "Back"; ObjectID = "Whe-Py-nYE";</note>
+      </trans-unit>
+      <trans-unit id="ZYk-7M-eMC.text" xml:space="preserve">
+        <source>Password:</source>
+        <target>Mật khẩu:</target>
+        <note>Class = "UILabel"; text = "Password:"; ObjectID = "ZYk-7M-eMC";</note>
+      </trans-unit>
+      <trans-unit id="a78-To-zkL.text" xml:space="preserve">
+        <source>Email:</source>
+        <target>Email:</target>
+        <note>Class = "UILabel"; text = "Email:"; ObjectID = "a78-To-zkL";</note>
+      </trans-unit>
+      <trans-unit id="aRP-dc-cDR.normalTitle" xml:space="preserve">
+        <source>1. Check</source>
+        <target>1. Kiểm tra</target>
+        <note>Class = "UIButton"; normalTitle = "1. Check"; ObjectID = "aRP-dc-cDR";</note>
+      </trans-unit>
+      <trans-unit id="aUb-3Q-pFE.normalTitle" xml:space="preserve">
+        <source>Bleeding</source>
+        <target>Chảy máu / Mất máu</target>
+        <note>Class = "UIButton"; normalTitle = "Bleeding"; ObjectID = "aUb-3Q-pFE";</note>
+      </trans-unit>
+      <trans-unit id="ahC-zh-xFH.title" xml:space="preserve">
+        <source>Home</source>
+        <target>Trang chủ</target>
+        <note>Class = "UIViewController"; title = "Home"; ObjectID = "ahC-zh-xFH";</note>
+      </trans-unit>
+      <trans-unit id="akz-gJ-58a.text" xml:space="preserve">
+        <source>Daughter</source>
+        <target>Daughter</target>
+        <note>Class = "UILabel"; text = "Daughter"; ObjectID = "akz-gJ-58a";</note>
+      </trans-unit>
+      <trans-unit id="asl-MV-iT7.text" xml:space="preserve">
+        <source>https://drive.google.com/file/d/1_H7ELxFv9T0PXfvi-74KLHPVvoPYnQ7j/view</source>
+        <target>https://drive.google.com/file/d/1_H7ELxFv9T0PXfvi-74KLHPVvoPYnQ7j/view</target>
+        <note>Class = "UITextField"; text = "https://drive.google.com/file/d/1_H7ELxFv9T0PXfvi-74KLHPVvoPYnQ7j/view"; ObjectID = "asl-MV-iT7";</note>
+      </trans-unit>
+      <trans-unit id="ceM-YS-VxQ.text" xml:space="preserve">
+        <source>Full Name:</source>
+        <target>Họ tên:</target>
+        <note>Class = "UILabel"; text = "Full Name:"; ObjectID = "ceM-YS-VxQ";</note>
+      </trans-unit>
+      <trans-unit id="eRj-GD-geg.text" xml:space="preserve">
+        <source>Add Emergency Contacts</source>
+        <target>Thêm Liên Lạc Khẩn Cấp</target>
+        <note>Class = "UILabel"; text = "Add Emergency Contacts"; ObjectID = "eRj-GD-geg";</note>
+      </trans-unit>
+      <trans-unit id="eg6-8J-0x5.text" xml:space="preserve">
+        <source>Share Location</source>
+        <target>Chia sẻ vị trí</target>
+        <note>Class = "UILabel"; text = "Share Location"; ObjectID = "eg6-8J-0x5";</note>
+      </trans-unit>
+      <trans-unit id="f4n-3N-XcJ.text" xml:space="preserve">
+        <source>━━━━━━━━━━━</source>
+        <target>━━━━━━━━━━━</target>
+        <note>Class = "UILabel"; text = "━━━━━━━━━━━"; ObjectID = "f4n-3N-XcJ";</note>
+      </trans-unit>
+      <trans-unit id="ftq-QE-kpf.normalTitle" xml:space="preserve">
+        <source>Add</source>
+        <target>Thêm</target>
+        <note>Class = "UIButton"; normalTitle = "Add"; ObjectID = "ftq-QE-kpf";</note>
+      </trans-unit>
+      <trans-unit id="fye-aZ-YDk.text" xml:space="preserve">
+        <source>Date</source>
+        <target>Ngày</target>
+        <note>Class = "UILabel"; text = "Date"; ObjectID = "fye-aZ-YDk";</note>
+      </trans-unit>
+      <trans-unit id="g3B-V1-k3b.text" xml:space="preserve">
+        <source>Emergency Contact's Email</source>
+        <target>Email của liên lạc khẩn cấp</target>
+        <note>Class = "UILabel"; text = "Emergency Contact's Email"; ObjectID = "g3B-V1-k3b";</note>
+      </trans-unit>
+      <trans-unit id="guU-ys-qjr.text" xml:space="preserve">
+        <source>Name</source>
+        <target>Họ tên</target>
+        <note>Class = "UITextField"; text = "Name"; ObjectID = "guU-ys-qjr";</note>
+      </trans-unit>
+      <trans-unit id="hHT-hn-pts.normalTitle" xml:space="preserve">
+        <source>Burns</source>
+        <target>Bỏng</target>
+        <note>Class = "UIButton"; normalTitle = "Burns"; ObjectID = "hHT-hn-pts";</note>
+      </trans-unit>
+      <trans-unit id="jLB-RQ-WuR.text" xml:space="preserve">
+        <source>1. If there is a life threatening emergency, call 911 immediately. 
+2. Otherwise, skip below and apply Care
+</source>
+        <target>1. If there is a life threatening emergency, call 911 immediately. 
+2. Otherwise, skip below and apply Care
+</target>
+        <note>Class = "UILabel"; text = "1. If there is a life threatening emergency, call 911 immediately. \n2. Otherwise, skip below and apply Care\n"; ObjectID = "jLB-RQ-WuR";</note>
+      </trans-unit>
+      <trans-unit id="jXN-Ke-PBC.normalTitle" xml:space="preserve">
+        <source>3. Care</source>
+        <target>3. Chăm sóc</target>
+        <note>Class = "UIButton"; normalTitle = "3. Care"; ObjectID = "jXN-Ke-PBC";</note>
+      </trans-unit>
+      <trans-unit id="jgD-0K-r1E.normalTitle" xml:space="preserve">
+        <source>Heart Attack</source>
+        <target>Truỵ tim</target>
+        <note>Class = "UIButton"; normalTitle = "Heart Attack"; ObjectID = "jgD-0K-r1E";</note>
+      </trans-unit>
+      <trans-unit id="jw1-hU-Rci.title" xml:space="preserve">
+        <source>Settings</source>
+        <target>Cài đặt</target>
+        <note>Class = "UINavigationItem"; title = "Settings"; ObjectID = "jw1-hU-Rci";</note>
+      </trans-unit>
+      <trans-unit id="kLG-qW-jr6.normalTitle" xml:space="preserve">
+        <source>Add</source>
+        <target>Thêm</target>
+        <note>Class = "UIButton"; normalTitle = "Add"; ObjectID = "kLG-qW-jr6";</note>
+      </trans-unit>
+      <trans-unit id="kvf-UK-XMO.text" xml:space="preserve">
+        <source>After Call 911: </source>
+        <target>Sau khi gọi 911: </target>
+        <note>Class = "UILabel"; text = "After Call 911: "; ObjectID = "kvf-UK-XMO";</note>
+      </trans-unit>
+      <trans-unit id="lP6-kj-A0n.text" xml:space="preserve">
+        <source>https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html</source>
+        <target>https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html</target>
+        <note>Class = "UITextField"; text = "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html"; ObjectID = "lP6-kj-A0n";</note>
+      </trans-unit>
+      <trans-unit id="lhq-XY-7wg.text" xml:space="preserve">
+        <source>Emergency Contact's Email</source>
+        <target>Email của liên lạc khẩn cấp</target>
+        <note>Class = "UILabel"; text = "Emergency Contact's Email"; ObjectID = "lhq-XY-7wg";</note>
+      </trans-unit>
+      <trans-unit id="nDo-aB-v2k.text" xml:space="preserve">
+        <source>Grand Papa</source>
+        <target>Grand Papa</target>
+        <note>Class = "UILabel"; text = "Grand Papa"; ObjectID = "nDo-aB-v2k";</note>
+      </trans-unit>
+      <trans-unit id="oFH-cs-kzK.text" xml:space="preserve">
+        <source>Name</source>
+        <target>Họ têm</target>
+        <note>Class = "UITextField"; text = "Name"; ObjectID = "oFH-cs-kzK";</note>
+      </trans-unit>
+      <trans-unit id="pfy-Uy-w8R.title" xml:space="preserve">
+        <source>Item</source>
+        <target>Item</target>
+        <note>Class = "UIBarButtonItem"; title = "Item"; ObjectID = "pfy-Uy-w8R";</note>
+      </trans-unit>
+      <trans-unit id="q2o-Sx-gXb.title" xml:space="preserve">
+        <source>Save</source>
+        <target>Lưu</target>
+        <note>Class = "UIBarButtonItem"; title = "Save"; ObjectID = "q2o-Sx-gXb";</note>
+      </trans-unit>
+      <trans-unit id="qO8-a2-k6U.text" xml:space="preserve">
+        <source>Emergency Contact's Phone:</source>
+        <target>Số điện thoại:</target>
+        <note>Class = "UILabel"; text = "Emergency Contact's Phone:"; ObjectID = "qO8-a2-k6U";</note>
+      </trans-unit>
+      <trans-unit id="rhy-yk-2ml.text" xml:space="preserve">
+        <source>Good Hearted</source>
+        <target>Good Hearted</target>
+        <note>Class = "UILabel"; text = "Good Hearted"; ObjectID = "rhy-yk-2ml";</note>
+      </trans-unit>
+      <trans-unit id="s8B-XR-fD6.text" xml:space="preserve">
+        <source>Emergency Contact's Phone:</source>
+        <target>Số điện thoại:</target>
+        <note>Class = "UILabel"; text = "Emergency Contact's Phone:"; ObjectID = "s8B-XR-fD6";</note>
+      </trans-unit>
+      <trans-unit id="sk7-cB-IHj.text" xml:space="preserve">
+        <source>123-456-7890</source>
+        <target>123-456-7890</target>
+        <note>Class = "UILabel"; text = "123-456-7890"; ObjectID = "sk7-cB-IHj";</note>
+      </trans-unit>
+      <trans-unit id="tGi-jD-azd.normalTitle" xml:space="preserve">
+        <source>Lightning</source>
+        <target>Sấm chớp</target>
+        <note>Class = "UIButton"; normalTitle = "Lightning"; ObjectID = "tGi-jD-azd";</note>
+      </trans-unit>
+      <trans-unit id="tjM-5h-dHS.title" xml:space="preserve">
+        <source>Care</source>
+        <target>Chăm sóc</target>
+        <note>Class = "UINavigationItem"; title = "Care"; ObjectID = "tjM-5h-dHS";</note>
+      </trans-unit>
+      <trans-unit id="vFX-WM-Rpy.normalTitle" xml:space="preserve">
+        <source>Choking</source>
+        <target>Sặc / Nghẹn</target>
+        <note>Class = "UIButton"; normalTitle = "Choking"; ObjectID = "vFX-WM-Rpy";</note>
+      </trans-unit>
+      <trans-unit id="vGr-Ap-j3o.text" xml:space="preserve">
+        <source>Phone Number</source>
+        <target>Số điện thoại</target>
+        <note>Class = "UILabel"; text = "Phone Number"; ObjectID = "vGr-Ap-j3o";</note>
+      </trans-unit>
+      <trans-unit id="vWn-5F-uiO.text" xml:space="preserve">
+        <source>If you have any feedback, please contact us through email azym1025@gmail.com. Reference Link
+American Red Cross First Aid Mobile App: https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html
+American Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps
+
+</source>
+        <target>If you have any feedback, please contact us through email azym1025@gmail.com. Reference Link
+American Red Cross First Aid Mobile App: https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html
+American Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps
+
+</target>
+        <note>Class = "UILabel"; text = "If you have any feedback, please contact us through email azym1025@gmail.com. Reference Link\nAmerican Red Cross First Aid Mobile App: https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html\nAmerican Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps\n\n"; ObjectID = "vWn-5F-uiO";</note>
+      </trans-unit>
+      <trans-unit id="vXt-u0-VRd.text" xml:space="preserve">
+        <source>Username:</source>
+        <target>Tên đăng nhập:</target>
+        <note>Class = "UILabel"; text = "Username:"; ObjectID = "vXt-u0-VRd";</note>
+      </trans-unit>
+      <trans-unit id="vgV-el-yEH.text" xml:space="preserve">
+        <source>2. Check Person: Is the person who need help in a life threatening emergency? If yes, call 911 immediately. Otherwise, check out Care section.</source>
+        <target>2. Check Person: Is the person who need help in a life threatening emergency? If yes, call 911 immediately. Otherwise, check out Care section.</target>
+        <note>Class = "UILabel"; text = "2. Check Person: Is the person who need help in a life threatening emergency? If yes, call 911 immediately. Otherwise, check out Care section."; ObjectID = "vgV-el-yEH";</note>
+      </trans-unit>
+      <trans-unit id="wWq-Mh-Es4.text" xml:space="preserve">
+        <source>* Airway: Tilt the person's forehead backward and ensure the mouth and airway is open. If there is any obstacle in the person's mouth, remove it. 
+* Breathing: Listen to the person's breathing while observing the person's chest for any sign of breathing for 10 seconds. 
+* Circulation: Check the person's pulse. If no pulse, apply CPR. If the person has a regular pulse, apply for a recovery position.</source>
+        <target>* Airway: Tilt the person's forehead backward and ensure the mouth and airway is open. If there is any obstacle in the person's mouth, remove it. 
+* Breathing: Listen to the person's breathing while observing the person's chest for any sign of breathing for 10 seconds. 
+* Circulation: Check the person's pulse. If no pulse, apply CPR. If the person has a regular pulse, apply for a recovery position.</target>
+        <note>Class = "UILabel"; text = "* Airway: Tilt the person's forehead backward and ensure the mouth and airway is open. If there is any obstacle in the person's mouth, remove it. \n* Breathing: Listen to the person's breathing while observing the person's chest for any sign of breathing for 10 seconds. \n* Circulation: Check the person's pulse. If no pulse, apply CPR. If the person has a regular pulse, apply for a recovery position."; ObjectID = "wWq-Mh-Es4";</note>
+      </trans-unit>
+      <trans-unit id="wjE-d1-nV5.text" xml:space="preserve">
+        <source>Emergency Contact's Full Name:</source>
+        <target>Họ tên của liên lạc khẩn cấp:</target>
+        <note>Class = "UILabel"; text = "Emergency Contact's Full Name:"; ObjectID = "wjE-d1-nV5";</note>
+      </trans-unit>
+      <trans-unit id="wyo-xj-Epq.text" xml:space="preserve">
+        <source>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</source>
+        <target>Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</target>
+        <note>Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "wyo-xj-Epq";</note>
+      </trans-unit>
+      <trans-unit id="zAQ-nB-0yP.normalTitle" xml:space="preserve">
+        <source>Sign In</source>
+        <target>Đăng nhập</target>
+        <note>Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "zAQ-nB-0yP";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="GoodHearted/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="vi">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.3" build-num="12C33"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source/>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>GoodHearted</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSAppleMusicUsageDescription" xml:space="preserve">
+        <source>For Profile Picture</source>
+        <note>Privacy - Media Library Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSCameraUsageDescription" xml:space="preserve">
+        <source>For Profile Picture</source>
+        <note>Privacy - Camera Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationAlwaysAndWhenInUseUsageDescription" xml:space="preserve">
+        <source>Please Allow GoodHearted to Share Your Location When You Are In Emergency</source>
+        <note>Privacy - Location Always and When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription" xml:space="preserve">
+        <source>For Your Benefits</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryUsageDescription" xml:space="preserve">
+        <source>For Profile Picture</source>
+        <note>Privacy - Photo Library Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

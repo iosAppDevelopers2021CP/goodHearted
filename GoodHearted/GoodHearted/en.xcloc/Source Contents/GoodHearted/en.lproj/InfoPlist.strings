@@ -1,0 +1,14 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "";
+/* Bundle name */
+"CFBundleName" = "GoodHearted";
+/* Privacy - Media Library Usage Description */
+"NSAppleMusicUsageDescription" = "For Profile Picture";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "For Profile Picture";
+/* Privacy - Location Always and When In Use Usage Description */
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "Please Allow GoodHearted to Share Your Location When You Are In Emergency";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "For Your Benefits";
+/* Privacy - Photo Library Usage Description */
+"NSPhotoLibraryUsageDescription" = "For Profile Picture";

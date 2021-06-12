@@ -66,6 +66,7 @@
 		F627DDFA26393C090055B23D /* EditEmergencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyTableViewController.swift; sourceTree = "<group>"; };
 		F627DDFD26393C910055B23D /* EditEmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEmergencyContactCell.swift; sourceTree = "<group>"; };
 		F627DE04263E63360055B23D /* AddSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSettingsViewController.swift; sourceTree = "<group>"; };
+		F6A1AC92267475E6008E7A70 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F6A1E8A32660B163005299C2 /* iphone_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone_alarm.mp3; sourceTree = "<group>"; };
 		F6BF08B12651DD51002491FD /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
 		F6DE018D26731BDF00370DDF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
@@ -307,6 +308,8 @@
 				F627DDD9262EA3690055B23D /* Base */,
 				F6DE018D26731BDF00370DDF /* vi */,
 				47600386267420C50096C0C0 /* zh-Hans */,
+				F6A1AC92267475E6008E7A70 /* en */,
+
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -458,14 +461,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U8KKKYWXF4;
+				DEVELOPMENT_TEAM = L4S7P4PNW6;
 				INFOPLIST_FILE = GoodHearted/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nibble.GoodHearted10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nibble.GoodHearted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -479,14 +482,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U8KKKYWXF4;
+				DEVELOPMENT_TEAM = L4S7P4PNW6;
 				INFOPLIST_FILE = GoodHearted/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nibble.GoodHearted10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nibble.GoodHearted;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -203,6 +203,9 @@
 /* Class = "UILabel"; text = "Emergency Contact's Email"; ObjectID = "lhq-XY-7wg"; */
 "lhq-XY-7wg.text" = "Email của liên lạc khẩn cấp";
 
+/* Class = "UILabel"; text = "Emergency Button"; ObjectID = "mBF-qL-O8Y"; */
+"mBF-qL-O8Y.text" = "Nút Khẩn Cấp";
+
 /* Class = "UILabel"; text = "Grand Papa"; ObjectID = "nDo-aB-v2k"; */
 "nDo-aB-v2k.text" = "Grand Papa";
 
@@ -228,7 +231,10 @@
 "sk7-cB-IHj.text" = "123-456-7890";
 
 /* Class = "UIButton"; normalTitle = "Lightning"; ObjectID = "tGi-jD-azd"; */
-"tGi-jD-azd.normalTitle" = "Sấm chớp";
+"tGi-jD-azd.normalTitle" = "Bị sét đánh";
+
+/* Class = "UILabel"; text = "Notify Contacts"; ObjectID = "te3-cn-oeW"; */
+"te3-cn-oeW.text" = "Nhắn Liên Lạc";
 
 /* Class = "UINavigationItem"; title = "Care"; ObjectID = "tjM-5h-dHS"; */
 "tjM-5h-dHS.title" = "Chăm sóc";

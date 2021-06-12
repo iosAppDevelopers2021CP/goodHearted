@@ -17,6 +17,7 @@
 		359C84472639005900646519 /* EmergencyContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C84462639005900646519 /* EmergencyContactCell.swift */; };
 		359C844A26391DE400646519 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359C844926391DE400646519 /* EditProfileViewController.swift */; };
 		476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E2CF126322EB700D085A5 /* signUpViewController.swift */; };
+		4783918A2670965600857BCC /* FirstAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478391892670965600857BCC /* FirstAidViewController.swift */; };
 		47D0A7912647B6590075AA27 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0A7902647B6590075AA27 /* SettingsViewController.swift */; };
 		47D0A79A2647CCEE0075AA27 /* PrivacyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0A7992647CCEE0075AA27 /* PrivacyViewController.swift */; };
 		F627DDD3262EA3690055B23D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DDD2262EA3690055B23D /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 		F627DE05263E63380055B23D /* AddSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F627DE04263E63360055B23D /* AddSettingsViewController.swift */; };
 		F6A1E8A42660B163005299C2 /* iphone_alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F6A1E8A32660B163005299C2 /* iphone_alarm.mp3 */; };
 		F6BF08B22651DD52002491FD /* EditContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6BF08B12651DD51002491FD /* EditContactViewController.swift */; };
+		F6DE019226731C6800370DDF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6DE019426731C6800370DDF /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		359C84462639005900646519 /* EmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactCell.swift; sourceTree = "<group>"; };
 		359C844926391DE400646519 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		476E2CF126322EB700D085A5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
+		478391892670965600857BCC /* FirstAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
 		47D0A7902647B6590075AA27 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		47D0A7992647CCEE0075AA27 /* PrivacyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyViewController.swift; sourceTree = "<group>"; };
 		57C51A35661D00FC4A878561 /* Pods-GoodHearted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodHearted.release.xcconfig"; path = "Target Support Files/Pods-GoodHearted/Pods-GoodHearted.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,6 +65,9 @@
 		F627DE04263E63360055B23D /* AddSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSettingsViewController.swift; sourceTree = "<group>"; };
 		F6A1E8A32660B163005299C2 /* iphone_alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone_alarm.mp3; sourceTree = "<group>"; };
 		F6BF08B12651DD51002491FD /* EditContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactViewController.swift; sourceTree = "<group>"; };
+		F6DE018D26731BDF00370DDF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Main.strings; sourceTree = "<group>"; };
+		F6DE019326731C6800370DDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F6DE019526731C7800370DDF /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +144,10 @@
 				47D0A7902647B6590075AA27 /* SettingsViewController.swift */,
 				47D0A7992647CCEE0075AA27 /* PrivacyViewController.swift */,
 				F6BF08B12651DD51002491FD /* EditContactViewController.swift */,
+				478391892670965600857BCC /* FirstAidViewController.swift */,
 				3526865026715BAD00521704 /* NotificationViewController.swift */,
 				35268652267162C400521704 /* NotificationCell.swift */,
+				F6DE019426731C6800370DDF /* Localizable.strings */,
 			);
 			path = GoodHearted;
 			sourceTree = "<group>";
@@ -187,6 +195,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = F627DDC6262EA3690055B23D;
 			productRefGroup = F627DDD0262EA3690055B23D /* Products */;
@@ -203,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DE019226731C6800370DDF /* Localizable.strings in Resources */,
 				F627DDDF262EA36C0055B23D /* LaunchScreen.storyboard in Resources */,
 				F6A1E8A42660B163005299C2 /* iphone_alarm.mp3 in Resources */,
 				F627DDDC262EA36C0055B23D /* Assets.xcassets in Resources */,
@@ -263,6 +273,7 @@
 				351E23A8263248D2006252DF /* HomeViewController.swift in Sources */,
 				476E2CF226322EB700D085A5 /* signUpViewController.swift in Sources */,
 				F627DE05263E63380055B23D /* AddSettingsViewController.swift in Sources */,
+				4783918A2670965600857BCC /* FirstAidViewController.swift in Sources */,
 				359C84472639005900646519 /* EmergencyContactCell.swift in Sources */,
 				47D0A79A2647CCEE0075AA27 /* PrivacyViewController.swift in Sources */,
 				351E23AB26324994006252DF /* ProfileViewController.swift in Sources */,
@@ -290,6 +301,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F627DDD9262EA3690055B23D /* Base */,
+				F6DE018D26731BDF00370DDF /* vi */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -302,6 +314,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		F6DE019426731C6800370DDF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6DE019326731C6800370DDF /* en */,
+				F6DE019526731C7800370DDF /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -309,6 +330,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -370,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -428,14 +451,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YB676C45S8;
+
+				DEVELOPMENT_TEAM = L4S7P4PNW6;
+
 				INFOPLIST_FILE = GoodHearted/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = memo.com.GoodHearted.2;
+
+				PRODUCT_BUNDLE_IDENTIFIER = com.nibble.GoodHearted;
+
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,14 +476,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YB676C45S8;
+
+				DEVELOPMENT_TEAM = L4S7P4PNW6;
+
 				INFOPLIST_FILE = GoodHearted/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = memo.com.GoodHearted.2;
+
+				PRODUCT_BUNDLE_IDENTIFIER = com.nibble.GoodHearted;
+
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

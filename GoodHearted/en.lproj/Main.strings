@@ -1,96 +1,102 @@
 
 /* Class = "UINavigationItem"; title = "Privacy"; ObjectID = "0x8-Yp-fWD"; */
-"0x8-Yp-fWD.title" = "Quyền riêng tư";
+"0x8-Yp-fWD.title" = "Privacy";
 
 /* Class = "UILabel"; text = "Emergency Contact's Full Name:"; ObjectID = "1Fd-D7-Ctc"; */
-"1Fd-D7-Ctc.text" = "Họ tên người liên lạc khẩn cấp của bạn:";
+"1Fd-D7-Ctc.text" = "Emergency Contact's Full Name:";
 
 /* Class = "UINavigationItem"; title = "Notification"; ObjectID = "2aY-qR-VVQ"; */
-"2aY-qR-VVQ.title" = "Thông báo";
+"2aY-qR-VVQ.title" = "Notification";
 
 /* Class = "UILabel"; text = "1. Recommended: Use the free American Red Cross First Aid & Emergency Preparedness App. "; ObjectID = "37l-Hk-WJc"; */
-"37l-Hk-WJc.text" = "1. Nên dùng: Ứng dụng miễn phí từ Hội Chữ Thập Đỏ Hoa Kì về Sơ Cứu và Đề Phòng Trường Hợp Khẩn Cấp. ";
+"37l-Hk-WJc.text" = "1. Recommended: Use the free American Red Cross First Aid & Emergency Preparedness App. ";
 
 /* Class = "UILabel"; text = "* If the person is conscious, apply First Aid Care.\n* If the person is unconscious, apply ABC. \n"; ObjectID = "3ua-f6-Tpz"; */
-"3ua-f6-Tpz.text" = "* Nếu người gặp nạn còn tỉnh, áp dụng biện pháp sơ cứu.\n* Nếu người gặp nạn không còn tỉnh, áp dụng biện pháp ABC.  \n";
+"3ua-f6-Tpz.text" = "* If the person is conscious, apply First Aid Care.\n* If the person is unconscious, apply ABC. \n";
 
 /* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "5wr-8j-tOP"; */
-"5wr-8j-tOP.title" = "Lưu";
+"5wr-8j-tOP.title" = "Save";
 
 /* Class = "UINavigationItem"; title = "Call"; ObjectID = "6Kh-4Y-zLl"; */
-"6Kh-4Y-zLl.title" = "Gọi";
+"6Kh-4Y-zLl.title" = "Call";
 
 /* Class = "UIButton"; normalTitle = "2. Call"; ObjectID = "6ZD-92-91T"; */
-"6ZD-92-91T.normalTitle" = "2. Gọi";
+"6ZD-92-91T.normalTitle" = "2. Call";
 
 /* Class = "UILabel"; text = "American Red Cross First Aid Quick Guide"; ObjectID = "6Zb-sW-bCh"; */
-"6Zb-sW-bCh.text" = "Hướng dẫn sơ cứu của Hội Chữ Thập Đỏ Hoa Kì";
+"6Zb-sW-bCh.text" = "American Red Cross First Aid Quick Guide";
 
 /* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "8i8-uO-dOI"; */
-"8i8-uO-dOI.normalTitle" = "Đăng kí";
+"8i8-uO-dOI.normalTitle" = "Sign Up";
 
 /* Class = "UINavigationItem"; title = "Check"; ObjectID = "8wa-mb-pkE"; */
-"8wa-mb-pkE.title" = "Kiểm tra";
+"8wa-mb-pkE.title" = "Check";
 
 /* Class = "UIButton"; normalTitle = "    Emergency Contacts                                                  "; ObjectID = "9EN-rx-c5V"; */
-"9EN-rx-c5V.normalTitle" = "    Liên lạc khẩn cấp                                                  ";
+"9EN-rx-c5V.normalTitle" = "    Emergency Contacts                                                  ";
+
+/* Class = "UILabel"; text = "Hearted"; ObjectID = "9V6-dY-IHJ"; */
+"9V6-dY-IHJ.text" = "Hearted";
 
 /* Class = "UIViewController"; title = "Profile"; ObjectID = "AMr-H0-drh"; */
-"AMr-H0-drh.title" = "Trang cá nhân";
+"AMr-H0-drh.title" = "Profile";
 
 /* Class = "UIButton"; normalTitle = "Asthma"; ObjectID = "Aam-6b-1lf"; */
-"Aam-6b-1lf.normalTitle" = "Hen suyễn";
+"Aam-6b-1lf.normalTitle" = "Asthma";
 
 /* Class = "UILabel"; text = "Emergency Contact"; ObjectID = "Au8-Jh-HLh"; */
-"Au8-Jh-HLh.text" = "Liên lạc khẩn cấp";
+"Au8-Jh-HLh.text" = "Emergency Contact";
 
 /* Class = "UILabel"; text = "By switching on this box, you have agreed to GoodHearted's Term and Policies."; ObjectID = "BFv-2F-T2U"; */
-"BFv-2F-T2U.text" = "Bằng cách chuyển nút này, người dùng đã đồng ý vào điều khoản đăng kí của ứng dụng.";
+"BFv-2F-T2U.text" = "By switching on this box, you have agreed to GoodHearted's Term and Policies.";
 
 /* Class = "UILabel"; text = "Username:"; ObjectID = "Bbx-Pz-av3"; */
-"Bbx-Pz-av3.text" = "Tên đăng nhập:";
+"Bbx-Pz-av3.text" = "Username:";
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "Bm6-gb-tfY"; */
-"Bm6-gb-tfY.title" = "Mục";
+"Bm6-gb-tfY.title" = "Item";
 
 /* Class = "UILabel"; text = "With GoodHearted, you can set up a list of your emergency contacts!"; ObjectID = "FO8-Ql-oVJ"; */
-"FO8-Ql-oVJ.text" = "Với ứng dụng GoodHearted, bạn có thể thêm một danh sách của các liên lạc khẩn cấp!";
+"FO8-Ql-oVJ.text" = "With GoodHearted, you can set up a list of your emergency contacts!";
 
 /* Class = "UIButton"; normalTitle = "    First Aid Booklet                                                   "; ObjectID = "HQH-gL-jLD"; */
-"HQH-gL-jLD.normalTitle" = "    Hướng dẫn sơ cứu                                                  ";
+"HQH-gL-jLD.normalTitle" = "    First Aid Booklet                                                   ";
 
 /* Class = "UIButton"; normalTitle = "    Edit Profile                                                   "; ObjectID = "I2Y-4N-9JO"; */
-"I2Y-4N-9JO.normalTitle" = "    Chỉnh sửa trang cá nhân                                                   ";
+"I2Y-4N-9JO.normalTitle" = "    Edit Profile                                                   ";
 
 /* Class = "UILabel"; text = "━━━━━━━━━━━"; ObjectID = "IDI-BM-96i"; */
 "IDI-BM-96i.text" = "━━━━━━━━━━━";
 
 /* Class = "UILabel"; text = "Number"; ObjectID = "IFH-5N-4ve"; */
-"IFH-5N-4ve.text" = "Số điện thoại";
+"IFH-5N-4ve.text" = "Number";
 
 /* Class = "UILabel"; text = "Username"; ObjectID = "JF3-C9-dam"; */
-"JF3-C9-dam.text" = "Tên đăng nhập";
+"JF3-C9-dam.text" = "Username";
 
 /* Class = "UINavigationItem"; title = "First Aid Booklet"; ObjectID = "Jf9-VC-XNC"; */
-"Jf9-VC-XNC.title" = "Tuyển tập những cách sơ cứu";
+"Jf9-VC-XNC.title" = "First Aid Booklet";
 
 /* Class = "UILabel"; text = "1. Check Scene: If Scene is not safe, exit the area. Otherwise, continue below instructions."; ObjectID = "JtF-Dh-kiI"; */
-"JtF-Dh-kiI.text" = "1.  Kiểm tra hiện trường:  Nếu như không an toàn, tìm cách thoát khỏi hiện trường. Nếu an toàn, tiến hành những hướng dẫn dưới đây.";
+"JtF-Dh-kiI.text" = "1. Check Scene: If Scene is not safe, exit the area. Otherwise, continue below instructions.";
 
 /* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "JvW-Qw-T8h"; */
-"JvW-Qw-T8h.normalTitle" = "Đăng kí";
+"JvW-Qw-T8h.normalTitle" = "Sign Up";
 
 /* Class = "UILabel"; text = "━━━━━━━━━━━"; ObjectID = "KCL-jY-Rsq"; */
 "KCL-jY-Rsq.text" = "━━━━━━━━━━━";
 
+/* Class = "UILabel"; text = "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html"; ObjectID = "KTF-3K-f5E"; */
+"KTF-3K-f5E.text" = "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html";
+
 /* Class = "UILabel"; text = "Hello! We're glad you're here! Let's sign up"; ObjectID = "L1t-WD-uXo"; */
-"L1t-WD-uXo.text" = "Xin chào! Chúng tôi rất vui vì bạn ở đây! Hãy bắt đầu đăng kí";
+"L1t-WD-uXo.text" = "Hello! We're glad you're here! Let's sign up";
 
 /* Class = "UIButton"; normalTitle = "    Sign Out                                           "; ObjectID = "Lkl-c2-T9O"; */
-"Lkl-c2-T9O.normalTitle" = "    Đăng xuất                                           ";
+"Lkl-c2-T9O.normalTitle" = "    Sign Out                                           ";
 
 /* Class = "UILabel"; text = "(A friendly reminder guide for First Aid and CPR certificated individuals)"; ObjectID = "NAk-c2-gE1"; */
-"NAk-c2-gE1.text" = "(Hướng dẫn nhanh dành cho các cá nhân được cấp chứng chỉ Sơ cứu và CPR)";
+"NAk-c2-gE1.text" = "(A friendly reminder guide for First Aid and CPR certificated individuals)";
 
 /* Class = "UILabel"; text = "ABC: "; ObjectID = "NOU-AI-NOP"; */
 "NOU-AI-NOP.text" = "ABC: ";
@@ -99,52 +105,52 @@
 "NpJ-yK-s8k.text" = "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html";
 
 /* Class = "UILabel"; text = "Prepare Before Rain: \n\nDownload the Free American Red Cross First Aid & Emergency Preparedness App"; ObjectID = "OAO-oB-LmC"; */
-"OAO-oB-LmC.text" = "Chuẩn bị:\n\nTải ứng dụng miễn phí từ Hội Chữ Thập Đỏ Hoa Kì về Sơ Cứu và Đề Phòng Trường Hợp Khẩn Cấp";
+"OAO-oB-LmC.text" = "Prepare Before Rain: \n\nDownload the Free American Red Cross First Aid & Emergency Preparedness App";
 
 /* Class = "UILabel"; text = "Add Emergency Contacts"; ObjectID = "Odc-5Z-ntk"; */
-"Odc-5Z-ntk.text" = "Thêm liên lạc khẩn cấp";
+"Odc-5Z-ntk.text" = "Add Emergency Contacts";
 
 /* Class = "UILabel"; text = "2. Or use online First Aid manual: "; ObjectID = "Pnx-Qq-3uE"; */
-"Pnx-Qq-3uE.text" = "2. Hoặc dùng sổ tay hướng dẫn sơ cứu trực tuyến: ";
+"Pnx-Qq-3uE.text" = "2. Or use online First Aid manual: ";
 
 /* Class = "UIButton"; normalTitle = "    Privacy                                                   "; ObjectID = "Pth-U7-Q4R"; */
-"Pth-U7-Q4R.normalTitle" = "    Quyền riêng tư                                                   ";
+"Pth-U7-Q4R.normalTitle" = "    Privacy                                                   ";
 
 /* Class = "UIButton"; normalTitle = "Add"; ObjectID = "QhM-vC-JL3"; */
-"QhM-vC-JL3.normalTitle" = "Thêm";
+"QhM-vC-JL3.normalTitle" = "Add";
 
 /* Class = "UILabel"; text = "Common Emergencies:"; ObjectID = "R6U-x3-WVK"; */
-"R6U-x3-WVK.text" = "Các trường hợp khẩn cấp thường gặp:";
+"R6U-x3-WVK.text" = "Common Emergencies:";
 
 /* Class = "UILabel"; text = "Phone Number:"; ObjectID = "Upq-0P-SgB"; */
-"Upq-0P-SgB.text" = "Số điện thoại:";
+"Upq-0P-SgB.text" = "Phone Number:";
 
 /* Class = "UILabel"; text = "grandpa@gmail.com"; ObjectID = "V8r-vu-Gd0"; */
 "V8r-vu-Gd0.text" = "grandpa@gmail.com";
 
 /* Class = "UILabel"; text = "Password"; ObjectID = "VtJ-Y1-v57"; */
-"VtJ-Y1-v57.text" = "Mật khẩu";
+"VtJ-Y1-v57.text" = "Password";
 
 /* Class = "UILabel"; text = "Emergency Contacts"; ObjectID = "WBS-hi-eYt"; */
-"WBS-hi-eYt.text" = "Liên lạc khẩn cấp";
+"WBS-hi-eYt.text" = "Emergency Contacts";
 
 /* Class = "UIButton"; normalTitle = "Back"; ObjectID = "Whe-Py-nYE"; */
-"Whe-Py-nYE.normalTitle" = "Quay lại";
+"Whe-Py-nYE.normalTitle" = "Back";
 
 /* Class = "UILabel"; text = "Password:"; ObjectID = "ZYk-7M-eMC"; */
-"ZYk-7M-eMC.text" = "Mật khẩu:";
+"ZYk-7M-eMC.text" = "Password:";
 
 /* Class = "UILabel"; text = "Email:"; ObjectID = "a78-To-zkL"; */
 "a78-To-zkL.text" = "Email:";
 
 /* Class = "UIButton"; normalTitle = "1. Check"; ObjectID = "aRP-dc-cDR"; */
-"aRP-dc-cDR.normalTitle" = "1. Kiểm tra";
+"aRP-dc-cDR.normalTitle" = "1. Check";
 
 /* Class = "UIButton"; normalTitle = "Bleeding"; ObjectID = "aUb-3Q-pFE"; */
-"aUb-3Q-pFE.normalTitle" = "Chảy máu / Mất máu";
+"aUb-3Q-pFE.normalTitle" = "Bleeding";
 
 /* Class = "UIViewController"; title = "Home"; ObjectID = "ahC-zh-xFH"; */
-"ahC-zh-xFH.title" = "Trang chủ";
+"ahC-zh-xFH.title" = "Home";
 
 /* Class = "UILabel"; text = "Daughter"; ObjectID = "akz-gJ-58a"; */
 "akz-gJ-58a.text" = "Daughter";
@@ -153,115 +159,112 @@
 "asl-MV-iT7.text" = "https://drive.google.com/file/d/1_H7ELxFv9T0PXfvi-74KLHPVvoPYnQ7j/view";
 
 /* Class = "UILabel"; text = "Full Name:"; ObjectID = "ceM-YS-VxQ"; */
-"ceM-YS-VxQ.text" = "Họ tên:";
+"ceM-YS-VxQ.text" = "Full Name:";
 
 /* Class = "UILabel"; text = "Add Emergency Contacts"; ObjectID = "eRj-GD-geg"; */
-"eRj-GD-geg.text" = "Thêm Liên Lạc Khẩn Cấp";
+"eRj-GD-geg.text" = "Add Emergency Contacts";
 
 /* Class = "UILabel"; text = "Share Location"; ObjectID = "eg6-8J-0x5"; */
-"eg6-8J-0x5.text" = "Chia sẻ vị trí";
+"eg6-8J-0x5.text" = "Share Location";
 
 /* Class = "UILabel"; text = "━━━━━━━━━━━"; ObjectID = "f4n-3N-XcJ"; */
 "f4n-3N-XcJ.text" = "━━━━━━━━━━━";
 
 /* Class = "UIButton"; normalTitle = "Add"; ObjectID = "ftq-QE-kpf"; */
-"ftq-QE-kpf.normalTitle" = "Thêm";
+"ftq-QE-kpf.normalTitle" = "Add";
 
 /* Class = "UILabel"; text = "Date"; ObjectID = "fye-aZ-YDk"; */
-"fye-aZ-YDk.text" = "Ngày";
+"fye-aZ-YDk.text" = "Date";
 
 /* Class = "UILabel"; text = "Emergency Contact's Email"; ObjectID = "g3B-V1-k3b"; */
-"g3B-V1-k3b.text" = "Email của liên lạc khẩn cấp";
+"g3B-V1-k3b.text" = "Emergency Contact's Email";
 
 /* Class = "UITextField"; text = "Name"; ObjectID = "guU-ys-qjr"; */
-"guU-ys-qjr.text" = "Họ tên";
+"guU-ys-qjr.text" = "Name";
 
 /* Class = "UIButton"; normalTitle = "Burns"; ObjectID = "hHT-hn-pts"; */
-"hHT-hn-pts.normalTitle" = "Bỏng";
+"hHT-hn-pts.normalTitle" = "Burns";
 
 /* Class = "UILabel"; text = "1. If there is a life threatening emergency, call 911 immediately. \n2. Otherwise, skip below and apply Care\n"; ObjectID = "jLB-RQ-WuR"; */
-"jLB-RQ-WuR.text" = "1. Nếu trường hợp khẩn cấp nguy hiểm đến tính mạng, gọi 911 ngay tức khắc. \n2. Nếu không nguy hiểm đến tính mạng, nhấn vào Chăm sóc.\n";
+"jLB-RQ-WuR.text" = "1. If there is a life threatening emergency, call 911 immediately. \n2. Otherwise, skip below and apply Care\n";
 
 /* Class = "UIButton"; normalTitle = "3. Care"; ObjectID = "jXN-Ke-PBC"; */
-"jXN-Ke-PBC.normalTitle" = "3. Chăm sóc";
+"jXN-Ke-PBC.normalTitle" = "3. Care";
 
 /* Class = "UIButton"; normalTitle = "Heart Attack"; ObjectID = "jgD-0K-r1E"; */
-"jgD-0K-r1E.normalTitle" = "Truỵ tim";
+"jgD-0K-r1E.normalTitle" = "Heart Attack";
 
 /* Class = "UINavigationItem"; title = "Settings"; ObjectID = "jw1-hU-Rci"; */
-"jw1-hU-Rci.title" = "Cài đặt";
+"jw1-hU-Rci.title" = "Settings";
 
 /* Class = "UIButton"; normalTitle = "Add"; ObjectID = "kLG-qW-jr6"; */
-"kLG-qW-jr6.normalTitle" = "Thêm";
+"kLG-qW-jr6.normalTitle" = "Add";
 
 /* Class = "UILabel"; text = "After Call 911: "; ObjectID = "kvf-UK-XMO"; */
-"kvf-UK-XMO.text" = "Sau khi gọi 911: ";
-
-/* Class = "UITextField"; text = "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html"; ObjectID = "lP6-kj-A0n"; */
-"lP6-kj-A0n.text" = "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html";
+"kvf-UK-XMO.text" = "After Call 911: ";
 
 /* Class = "UILabel"; text = "Emergency Contact's Email"; ObjectID = "lhq-XY-7wg"; */
-"lhq-XY-7wg.text" = "Email của liên lạc khẩn cấp";
+"lhq-XY-7wg.text" = "Emergency Contact's Email";
 
 /* Class = "UILabel"; text = "Emergency Button"; ObjectID = "mBF-qL-O8Y"; */
-"mBF-qL-O8Y.text" = "Nút Khẩn Cấp";
+"mBF-qL-O8Y.text" = "Emergency Button";
 
 /* Class = "UILabel"; text = "Grand Papa"; ObjectID = "nDo-aB-v2k"; */
 "nDo-aB-v2k.text" = "Grand Papa";
 
 /* Class = "UITextField"; text = "Name"; ObjectID = "oFH-cs-kzK"; */
-"oFH-cs-kzK.text" = "Họ tên";
+"oFH-cs-kzK.text" = "Name";
 
 /* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "pfy-Uy-w8R"; */
-"pfy-Uy-w8R.title" = "Mục";
+"pfy-Uy-w8R.title" = "Item";
 
 /* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "q2o-Sx-gXb"; */
-"q2o-Sx-gXb.title" = "Lưu";
+"q2o-Sx-gXb.title" = "Save";
 
 /* Class = "UILabel"; text = "Emergency Contact's Phone:"; ObjectID = "qO8-a2-k6U"; */
-"qO8-a2-k6U.text" = "Số điện thoại:";
+"qO8-a2-k6U.text" = "Emergency Contact's Phone:";
 
-/* Class = "UILabel"; text = "Good Hearted"; ObjectID = "rhy-yk-2ml"; */
-"rhy-yk-2ml.text" = "Good Hearted";
+/* Class = "UILabel"; text = "Good "; ObjectID = "rhy-yk-2ml"; */
+"rhy-yk-2ml.text" = "Good ";
 
 /* Class = "UILabel"; text = "Emergency Contact's Phone:"; ObjectID = "s8B-XR-fD6"; */
-"s8B-XR-fD6.text" = "Số điện thoại:";
+"s8B-XR-fD6.text" = "Emergency Contact's Phone:";
 
 /* Class = "UILabel"; text = "123-456-7890"; ObjectID = "sk7-cB-IHj"; */
 "sk7-cB-IHj.text" = "123-456-7890";
 
 /* Class = "UIButton"; normalTitle = "Lightning"; ObjectID = "tGi-jD-azd"; */
-"tGi-jD-azd.normalTitle" = "Bị sét đánh";
+"tGi-jD-azd.normalTitle" = "Lightning";
 
 /* Class = "UILabel"; text = "Notify Contacts"; ObjectID = "te3-cn-oeW"; */
-"te3-cn-oeW.text" = "Nhắn Liên Lạc";
+"te3-cn-oeW.text" = "Notify Contacts";
 
 /* Class = "UINavigationItem"; title = "Care"; ObjectID = "tjM-5h-dHS"; */
-"tjM-5h-dHS.title" = "Chăm sóc";
+"tjM-5h-dHS.title" = "Care";
 
 /* Class = "UIButton"; normalTitle = "Choking"; ObjectID = "vFX-WM-Rpy"; */
-"vFX-WM-Rpy.normalTitle" = "Sặc / Nghẹn";
+"vFX-WM-Rpy.normalTitle" = "Choking";
 
 /* Class = "UILabel"; text = "Phone Number"; ObjectID = "vGr-Ap-j3o"; */
-"vGr-Ap-j3o.text" = "Số điện thoại";
+"vGr-Ap-j3o.text" = "Phone Number";
 
 /* Class = "UILabel"; text = "If you have any feedback, please contact us through email azym1025@gmail.com. Reference Link\nAmerican Red Cross First Aid Mobile App: https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html\nAmerican Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps\n\n"; ObjectID = "vWn-5F-uiO"; */
 "vWn-5F-uiO.text" = "If you have any feedback, please contact us through email azym1025@gmail.com. Reference Link\nAmerican Red Cross First Aid Mobile App: https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html\nAmerican Red Cross Web site: https://www.redcross.org/take-a-class/first-aid/performing-first-aid/first-aid-steps\n\n";
 
 /* Class = "UILabel"; text = "Username:"; ObjectID = "vXt-u0-VRd"; */
-"vXt-u0-VRd.text" = "Tên đăng nhập:";
+"vXt-u0-VRd.text" = "Username:";
 
 /* Class = "UILabel"; text = "2. Check Person: Is the person who need help in a life threatening emergency? If yes, call 911 immediately. Otherwise, check out Care section."; ObjectID = "vgV-el-yEH"; */
-"vgV-el-yEH.text" = "2. Kiểm tra người gặp nạn: Có nguy hiểm đến tính mạng hay không? Nếu có, gọi 911 ngay tức khắc. Nếu không, nhấn vào Chăm sóc.";
+"vgV-el-yEH.text" = "2. Check Person: Is the person who need help in a life threatening emergency? If yes, call 911 immediately. Otherwise, check out Care section.";
 
 /* Class = "UILabel"; text = "* Airway: Tilt the person's forehead backward and ensure the mouth and airway is open. If there is any obstacle in the person's mouth, remove it. \n* Breathing: Listen to the person's breathing while observing the person's chest for any sign of breathing for 10 seconds. \n* Circulation: Check the person's pulse. If no pulse, apply CPR. If the person has a regular pulse, apply for a recovery position."; ObjectID = "wWq-Mh-Es4"; */
-"wWq-Mh-Es4.text" = "* Khí đạo: Nghiêng trán của người bệnh về phía sau và đảm bảo miệng và đường thở được mở. Nếu có bất kỳ chướng ngại vật nào trong miệng của người đó, hãy loại bỏ nó. \n* Hơi thở: Lắng nghe nhịp thở của người bệnh trong khi quan sát lồng ngực của người bệnh xem có bất kỳ dấu hiệu thở nào trong 10 giây.\n* Tuần hoàn: Kiểm tra mạch của người bệnh. Nếu không có mạch, hãy áp dụng CPR. Nếu người đó có mạch đều đặn, hãy phục hồi người bệnh.";
+"wWq-Mh-Es4.text" = "* Airway: Tilt the person's forehead backward and ensure the mouth and airway is open. If there is any obstacle in the person's mouth, remove it. \n* Breathing: Listen to the person's breathing while observing the person's chest for any sign of breathing for 10 seconds. \n* Circulation: Check the person's pulse. If no pulse, apply CPR. If the person has a regular pulse, apply for a recovery position.";
 
 /* Class = "UILabel"; text = "Emergency Contact's Full Name:"; ObjectID = "wjE-d1-nV5"; */
-"wjE-d1-nV5.text" = "Họ tên của liên lạc khẩn cấp:";
+"wjE-d1-nV5.text" = "Emergency Contact's Full Name:";
 
 /* Class = "UITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "wyo-xj-Epq"; */
 "wyo-xj-Epq.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
 
 /* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "zAQ-nB-0yP"; */
-"zAQ-nB-0yP.normalTitle" = "Đăng nhập";
+"zAQ-nB-0yP.normalTitle" = "Sign In";

@@ -44,6 +44,9 @@
 		35268652267162C400521704 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		359C84462639005900646519 /* EmergencyContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyContactCell.swift; sourceTree = "<group>"; };
 		359C844926391DE400646519 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		47600386267420C50096C0C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		47600387267420C50096C0C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		47600388267420C50096C0C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		476E2CF126322EB700D085A5 /* signUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signUpViewController.swift; sourceTree = "<group>"; };
 		478391892670965600857BCC /* FirstAidViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAidViewController.swift; sourceTree = "<group>"; };
 		47D0A7902647B6590075AA27 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -197,6 +200,7 @@
 				en,
 				Base,
 				vi,
+				"zh-Hans",
 			);
 			mainGroup = F627DDC6262EA3690055B23D;
 			productRefGroup = F627DDD0262EA3690055B23D /* Products */;
@@ -303,7 +307,9 @@
 			children = (
 				F627DDD9262EA3690055B23D /* Base */,
 				F6DE018D26731BDF00370DDF /* vi */,
+				47600386267420C50096C0C0 /* zh-Hans */,
 				F6A1AC92267475E6008E7A70 /* en */,
+
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F627DDDE262EA36C0055B23D /* Base */,
+				47600387267420C50096C0C0 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -321,6 +328,7 @@
 			children = (
 				F6DE019326731C6800370DDF /* en */,
 				F6DE019526731C7800370DDF /* vi */,
+				47600388267420C50096C0C0 /* zh-Hans */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

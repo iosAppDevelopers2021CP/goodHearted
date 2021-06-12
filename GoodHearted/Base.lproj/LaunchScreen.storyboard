@@ -16,27 +16,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hearted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eL-mE-3Re">
-                                <rect key="frame" x="87" y="402" width="297" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hearted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eL-mE-3Re">
+                                <rect key="frame" x="87" y="428" width="297" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="297" id="SaJ-09-MRC"/>
+                                    <constraint firstAttribute="height" constant="82" id="oK1-vU-rSH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="90"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Good" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANL-xP-jgP">
-                                <rect key="frame" x="37" y="329" width="199" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ANL-xP-jgP">
+                                <rect key="frame" x="36" y="328" width="199" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="LYd-hT-LfI"/>
+                                    <constraint firstAttribute="width" constant="199" id="zd1-Bw-aSf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BodoniSvtyTwoITCTT-Bold" family="Bodoni 72" pointSize="90"/>
                                 <color key="textColor" red="0.18811047080000001" green="0.28204035760000001" blue="0.74099582429999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Gsl-md-0XU">
-                                <rect key="frame" x="243" y="392" width="45" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="Gsl-md-0XU">
+                                <rect key="frame" x="243" y="376" width="45" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="mV2-8L-jHY"/>
+                                    <constraint firstAttribute="width" constant="45" id="ohT-QW-xZI"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.73360735180000003" green="0.85494124890000001" blue="0.88049334290000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0eL-mE-3Re" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="21" id="YIo-qw-ov1"/>
+                            <constraint firstItem="ANL-xP-jgP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="-71.5" id="c8U-rK-XfZ"/>
+                            <constraint firstItem="0eL-mE-3Re" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="28.5" id="cMc-CH-Who"/>
+                            <constraint firstItem="Gsl-md-0XU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="58.5" id="hVz-Qm-teL"/>
+                            <constraint firstItem="ANL-xP-jgP" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-80" id="sWN-D0-QYF"/>
+                            <constraint firstItem="Gsl-md-0XU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-45" id="uto-T8-jRP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

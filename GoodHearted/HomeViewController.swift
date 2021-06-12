@@ -65,7 +65,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
             let long = current.longitude.description
             let lat = current.latitude.description
             
-            controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+            controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttps://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttps://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
             controller.recipients = arrayPhone
             controller.messageComposeDelegate = self
             self.present(controller, animated: true, completion: nil)
@@ -247,13 +247,12 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
     
     func sendUnsafeText() {
         if (MFMessageComposeViewController.canSendText()) {
-            self.saveNotification()
                    let controller = MFMessageComposeViewController()
                    let current : PFGeoPoint = user!["Location"] as! PFGeoPoint
                    let long = current.longitude.description
                    let lat = current.latitude.description
                 
-                   controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttp://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttp://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
+                   controller.body = "🚨🚨🚨 Please help me! I am in an emergency!\n📍Direct to my location:\n🗺 Google Map\nhttps://maps.google.com/?daddr=\(lat),\(long)&directionsmode=driving\n" + "🗺 Apple Map\nhttps://maps.apple.com/maps?daddr=\(lat),\(long)&dirflg=d"
                    controller.recipients = arrayPhone
                    controller.messageComposeDelegate = self
                    self.present(controller, animated: true, completion: nil)
@@ -301,7 +300,7 @@ class HomeViewController: UIViewController, CLLocationManagerDelegate, MFMessage
         
         let pin = MKPointAnnotation()
         pin.coordinate = coordinate
-        pin.title = username
+        //pin.title = username
         print(username + "adds pin")
         mapView.addAnnotation(pin)
     }
